@@ -31,12 +31,16 @@ public class Main {
 
         LogRepository logRepository=new LogRepository();
 
-        ArrayList<String> errorTimeStampList=logRepository.getErrorTimeList(logPath, "The test recently read the file");
+        ArrayList<String> errorTimeStampList=logRepository.getErrorTimeList(logPath, "2020-09-13T02:38:04Z ERROR socket: Failed to get a socket, exiting child");
+
 
 
         //~~~~~~~~~~~~~~~~~~Pass error TimeListStamp~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
         long now=System.currentTimeMillis();   // /////////////////////////////////////////////////////////////
+
         for (String s : errorTimeStampList) { System.out.println(s); } // /////////////////////////////////////
+        //Error
 
 
     }
