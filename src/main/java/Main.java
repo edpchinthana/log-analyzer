@@ -35,7 +35,7 @@ public class Main {
         long newRowCount = logRowCount.getnewRowCount(logPath);
 
         LogReader logReaders=new LogReader();
-        logReaders.readLog(logPath);
+        logReaders.checkTimeFinding(logPath);
     }
 
 
