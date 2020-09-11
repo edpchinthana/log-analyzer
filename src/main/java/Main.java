@@ -1,3 +1,8 @@
+import logRepository.LogReader;
+import logRepository.LogRowCount;
+
+import java.io.IOException;
+
 public class Main {
 
     // Say Welcome
@@ -16,13 +21,22 @@ public class Main {
     // Loop
         //Ask log file path from user or ask use previous path
         //Ask to analyse the log file
-    String logPath = "src\\main\\java\\test.log";
-    String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
-
-    long lastRowCount = 0;
-    long newRowCount = logAnalyzer.getnewRowCount(logPath);
 
 
+//    String logPath = "src\\main\\java\\test.log";
+
+    public static void main(String[] args) {
+        String logPath="H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\sampleLogFile.log";
+        String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
+
+        LogRowCount logRowCount=new LogRowCount();
+
+        long lastRowCount = 0;
+        long newRowCount = logRowCount.getnewRowCount(logPath);
+
+        LogReader logReaders=new LogReader();
+        logReaders.readLog(logPath);
+    }
 
 
 
