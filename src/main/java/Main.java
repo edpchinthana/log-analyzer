@@ -16,6 +16,8 @@ public class Main {
     // Loop
         //Ask log file path from user or ask use previous path
         //Ask to analyse the log file
+    String logPath = "src\\main\\java\\lk\\ac\\uok\\setu\\test.log";
+    String timeStampsRecodePath="src\\main\\java\\lk\\ac\\uok\\setu\\timeStampsRecord.txt";
 
 
 
