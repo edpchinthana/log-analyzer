@@ -25,7 +25,7 @@ public class Main {
 
 //    String logPath = "src\\main\\java\\test.log";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String logPath="H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\sampleLogFile.log";
         String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
 
