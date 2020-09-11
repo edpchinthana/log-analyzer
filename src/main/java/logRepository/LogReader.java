@@ -1,6 +1,10 @@
 package logRepository;
 
+import org.apache.commons.io.input.ReversedLinesFileReader;
+
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -23,14 +27,8 @@ public class LogReader {
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
-//                System.out.println(data);
-//                System.out.println(data);
                 if(t1.equals(data)){
                     System.out.print(data+" ,Time =   ");
-                    System.out.println(System.currentTimeMillis()-lastTime);
-                }
-                if(t2.equals(data)){
-                    System.out.print(data+", Time =   ");
                     System.out.println(System.currentTimeMillis()-lastTime);
                 }
                 if(t3.equals(data)){
@@ -40,16 +38,16 @@ public class LogReader {
 
                 count++;
             }
-            System.out.println("NOt Found in 1st method");
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
             e.printStackTrace();
         }
         System.out.println(count);
         System.out.print("The task perform ");
         System.out.println(System.currentTimeMillis()-lastTime);
         System.out.println();
+
+
 
 
 
@@ -68,24 +66,51 @@ public class LogReader {
                 System.out.print(data+", Time =   ");
                 System.out.println(System.currentTimeMillis()-lastTime);
             }
-            if(t2.equals(data)){
-                System.out.print(data+", Time =   ");
-                System.out.println(System.currentTimeMillis()-lastTime);
-            }
             if(t3.equals(data)){
                 System.out.print(data+", Time =   ");
                 System.out.println(System.currentTimeMillis()-lastTime);
             }
-//            else
             count++;
 
         } while (data != null);
-        System.out.println("NOt Found in 1st method");
         fr.close();
         System.out.println(count);
         System.out.print("The task perform ");
         System.out.println(System.currentTimeMillis()-lastTime);
         System.out.println();
+
+
+
+
+
+
+        lastTime=System.currentTimeMillis();;
+        count=0l;
+        ReversedLinesFileReader frr = new ReversedLinesFileReader(new File(strpath));
+        String ch;
+//        time=0;
+        Conversion="";
+        do {
+            ch = frr.readLine();
+            if(t1.equals(ch)){
+                System.out.print(ch+", Time =   ");
+                System.out.println(System.currentTimeMillis()-lastTime);
+            }
+            if(t3.equals(ch)){
+                System.out.print(ch+", Time =   ");
+                System.out.println(System.currentTimeMillis()-lastTime);
+            }
+            count++;
+
+//            out.print(ch+"<br/>");
+        } while (ch != null);
+        frr.close();
+        fr.close();
+        System.out.println(count);
+        System.out.print("The task perform ");
+        System.out.println(System.currentTimeMillis()-lastTime);
+        System.out.println();
+
     }
 
 
