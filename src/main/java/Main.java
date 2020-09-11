@@ -1,7 +1,7 @@
-import logRepository.LogReader;
-import logRepository.LogRowCount;
+import logRepository.LogRepository;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -29,13 +29,16 @@ public class Main {
         String logPath="H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\sampleLogFile.log";
         String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
 
-        LogRowCount logRowCount=new LogRowCount();
+        LogRepository logRepository=new LogRepository();
 
-        long lastRowCount = 0;
-        long newRowCount = logRowCount.getnewRowCount(logPath);
+        ArrayList<String> errorTimeStampList=logRepository.getErrorTimeList(logPath, "The test recently read the file");
 
-        LogReader logReaders=new LogReader();
-        logReaders.checkTimeFinding(logPath);
+
+        //~~~~~~~~~~~~~~~~~~Pass error TimeListStamp~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        long now=System.currentTimeMillis();   // /////////////////////////////////////////////////////////////
+        for (String s : errorTimeStampList) { System.out.println(s); } // /////////////////////////////////////
+
+
     }
 
 
