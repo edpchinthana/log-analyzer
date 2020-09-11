@@ -3,6 +3,8 @@ package logRepository;
 import org.apache.commons.io.input.ReversedLinesFileReader;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -110,6 +112,65 @@ public class LogReader {
         System.out.print("The task perform ");
         System.out.println(System.currentTimeMillis()-lastTime);
         System.out.println();
+
+
+
+
+
+        System.out.println("NIO Reader : Load all file into RAM");
+        lastTime=System.currentTimeMillis();
+        Files.lines(Path.of(path))
+                .filter(line -> line.contains("Padma"))
+                .forEach(System.out::println);
+//                .forEach(System.out::println);
+        System.out.println(System.currentTimeMillis()-lastTime);
+        lastTime=System.currentTimeMillis();;
+        Files.lines(Path.of(path))
+                .filter(line -> line.contains("Githmi"))
+                .forEach(System.out::println);
+//                .forEach(System.out::println);
+        System.out.println(System.currentTimeMillis()-lastTime);
+        System.out.println();
+
+
+
+//
+       lastTime=System.currentTimeMillis();
+        try (FileInputStream is = new FileInputStream(path);
+             BufferedInputStream bis = new BufferedInputStream(is)) {
+            int b;
+            while ((b = bis.read()) != -1) {
+//                System.out.println("Byte: " + b);
+//                System.out.print((char)b);
+                if(t1.equals(b)){
+                    System.out.print(b+", Time =   ");
+                    System.out.println(System.currentTimeMillis()-lastTime);
+                }
+                if(t3.equals(b)){
+                    System.out.print(b+", Time =   ");
+                    System.out.println(System.currentTimeMillis()-lastTime);
+                }
+            }
+            System.out.println("BufferedInputStream");
+            System.out.println(System.currentTimeMillis()-lastTime); //171  // Read by a single letter
+
+
+
+            lastTime=System.currentTimeMillis();
+            try (FileReader reader = new FileReader(path);
+                 BufferedReader bufferedReader = new BufferedReader((reader))) {
+                int c;
+                while ((c = bufferedReader.read()) != -1) {
+//                    System.out.println("Char: " + (char) c);
+                }
+            }
+            System.out.println("bufferedReader");
+            System.out.println(System.currentTimeMillis()-lastTime);  //334   // Read by a single letter
+        }
+
+
+
+
 
     }
 
