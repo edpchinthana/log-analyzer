@@ -3,15 +3,7 @@
 2020-09-08T10:52:00Z INFO application started
 2020-09-08T10:52:01Z ERROR an exception occurred
 2020-09-08T10:52:02Z ERROR an exception occurred
-2020-09-08T10:52:03Z WARN INVOICE 224245 from Power EC Ltd
 2020-09-08T10:52:04Z ERROR attempting to dump core in …
-2020-09-08T10:52:05Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:52:06Z WARN httpd: caught SIGBUS
-2020-09-08T10:52:07Z ERROR Server seems busy
-2020-09-08T10:52:08Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:52:09Z INFO application finished
-2020-09-08T10:52:10Z ERROR attempting to dump core in …
-2020-09-08T10:52:11Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:52:12Z ERROR Server seems busy
 2020-09-08T10:52:13Z INFO application finished
 2020-09-08T10:52:14Z INFO application terminated
@@ -28,9 +20,6 @@
 2020-09-08T10:52:25Z ERROR an exception occurred
 2020-09-08T10:52:26Z ERROR Server seems busy
 2020-09-08T10:52:27Z WARN httpd: caught SIGBUS
-2020-09-08T10:52:28Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:52:29Z INFO application terminated
-2020-09-08T10:52:30Z WARN httpd: caught SIGBUS
 2020-09-08T10:52:31Z INFO application started
 2020-09-08T10:52:32Z WARN httpd: caught SIGBUS
 2020-09-08T10:52:33Z ERROR Server seems busy
@@ -45,10 +34,6 @@
 2020-09-08T10:52:42Z INFO application finished
 2020-09-08T10:52:43Z ERROR an exception occurred
 2020-09-08T10:52:44Z WARN httpd: caught SIGBUS
-2020-09-08T10:52:45Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:52:46Z INFO application terminated
-2020-09-08T10:52:47Z ERROR Server seems busy
-2020-09-08T10:52:48Z WARN httpd: caught SIGBUS
 2020-09-08T10:52:49Z ERROR the server is not responded
 2020-09-08T10:52:50Z ERROR the server is not responded
 2020-09-08T10:52:51Z ERROR Server seems busy
@@ -57,34 +42,10 @@
 2020-09-08T10:52:54Z ERROR an exception occurred
 2020-09-08T10:52:55Z WARN httpd: caught SIGBUS
 2020-09-08T10:52:56Z INFO application finished
-2020-09-08T10:52:57Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:52:58Z ERROR attempting to dump core in …
-2020-09-08T10:53:00Z ERROR attempting to dump core in …
-2020-09-08T10:53:01Z INFO application terminated
-2020-09-08T10:53:02Z INFO application finished
-2020-09-08T10:53:03Z ERROR an exception occurred
-2020-09-08T10:53:04Z INFO application started
-2020-09-08T10:53:05Z INFO application started
-2020-09-08T10:53:06Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:53:07Z WARN httpd: caught SIGBUS
 2020-09-08T10:53:08Z INFO application finished
 2020-09-08T10:53:09Z ERROR Server seems busy
 2020-09-08T10:53:10Z ERROR the server is not responded
-2020-09-08T10:53:11Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:53:12Z INFO application finished
-2020-09-08T10:53:13Z ERROR Server seems busy
-2020-09-08T10:53:14Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:53:15Z INFO application started
-2020-09-08T10:53:16Z INFO application finished
-2020-09-08T10:53:17Z INFO application started
-2020-09-08T10:53:18Z INFO application finished
-2020-09-08T10:53:19Z INFO application finished
-2020-09-08T10:53:20Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:53:21Z ERROR attempting to dump core in …
-2020-09-08T10:53:22Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:53:23Z INFO application started
-2020-09-08T10:53:24Z INFO application finished
-2020-09-08T10:53:25Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:53:26Z WARN httpd: caught SIGBUS
 2020-09-08T10:53:27Z INFO application started
 2020-09-08T10:53:28Z ERROR socket: Failed to get a socket, exiting child
@@ -92,15 +53,6 @@
 2020-09-08T10:53:30Z ERROR Server seems busy
 2020-09-08T10:53:31Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:53:32Z WARN httpd: caught SIGBUS
-2020-09-08T10:53:33Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:53:34Z ERROR the server is not responded
-2020-09-08T10:53:35Z ERROR an exception occurred
-2020-09-08T10:53:36Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:53:37Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:53:38Z ERROR attempting to dump core in …
-2020-09-08T10:53:39Z INFO application started
-2020-09-08T10:53:40Z ERROR Server seems busy
-2020-09-08T10:53:41Z WARN httpd: caught SIGBUS
 2020-09-08T10:53:42Z INFO application terminated
 2020-09-08T10:53:43Z ERROR an exception occurred
 2020-09-08T10:53:44Z INFO application terminated
@@ -113,16 +65,6 @@
 2020-09-08T10:53:51Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:53:52Z ERROR an exception occurred
 2020-09-08T10:53:53Z INFO application terminated
-2020-09-08T10:53:54Z INFO application finished
-2020-09-08T10:53:55Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:53:56Z INFO application terminated
-2020-09-08T10:53:57Z WARN httpd: caught SIGBUS
-2020-09-08T10:53:58Z ERROR Server seems busy
-2020-09-08T10:54:00Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:01Z ERROR the server is not responded
-2020-09-08T10:54:02Z ERROR the server is not responded
-2020-09-08T10:54:03Z ERROR Server seems busy
-2020-09-08T10:54:04Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:54:05Z INFO application finished
 2020-09-08T10:54:06Z INFO application terminated
 2020-09-08T10:54:07Z ERROR socket: Failed to get a socket, exiting child
@@ -131,39 +73,14 @@
 2020-09-08T10:54:10Z WARN httpd: caught SIGBUS
 2020-09-08T10:54:11Z INFO application started
 2020-09-08T10:54:12Z ERROR an exception occurred
-2020-09-08T10:54:13Z ERROR the server is not responded
-2020-09-08T10:54:14Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:15Z ERROR attempting to dump core in …
-2020-09-08T10:54:16Z WARN httpd: caught SIGBUS
-2020-09-08T10:54:17Z INFO application finished
-2020-09-08T10:54:18Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:19Z WARN httpd: caught SIGBUS
 2020-09-08T10:54:20Z ERROR Server seems busy
 2020-09-08T10:54:21Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:54:22Z ERROR Server seems busy
 2020-09-08T10:54:23Z ERROR the server is not responded
 2020-09-08T10:54:24Z INFO application started
 2020-09-08T10:54:25Z ERROR Server seems busy
-2020-09-08T10:54:26Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:54:27Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:28Z ERROR Server seems busy
-2020-09-08T10:54:29Z INFO application terminated
-2020-09-08T10:54:30Z ERROR attempting to dump core in …
-2020-09-08T10:54:31Z ERROR an exception occurred
-2020-09-08T10:54:32Z ERROR an exception occurred
-2020-09-08T10:54:33Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:54:34Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:35Z ERROR attempting to dump core in …
-2020-09-08T10:54:36Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:37Z ERROR the server is not responded
-2020-09-08T10:54:38Z ERROR Server seems busy
-2020-09-08T10:54:39Z ERROR the server is not responded
-2020-09-08T10:54:40Z WARN httpd: caught SIGBUS
 2020-09-08T10:54:41Z INFO application started
 2020-09-08T10:54:42Z ERROR the server is not responded
-2020-09-08T10:54:43Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:44Z ERROR Server seems busy
-2020-09-08T10:54:45Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:54:46Z ERROR Server seems busy
 2020-09-08T10:54:47Z INFO application terminated
 2020-09-08T10:54:48Z ERROR an exception occurred
@@ -172,28 +89,13 @@
 2020-09-08T10:54:51Z INFO application finished
 2020-09-08T10:54:52Z INFO application terminated
 2020-09-08T10:54:53Z ERROR Server seems busy
-2020-09-08T10:54:54Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:54:55Z ERROR Server seems busy
-2020-09-08T10:54:56Z ERROR Server seems busy
-2020-09-08T10:54:57Z INFO application started
-2020-09-08T10:54:58Z INFO application terminated
-2020-09-08T10:55:00Z ERROR an exception occurred
-2020-09-08T10:55:01Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:55:02Z INFO application finished
 2020-09-08T10:55:03Z INFO application started
 2020-09-08T10:55:04Z WARN httpd: caught SIGBUS
 2020-09-08T10:55:05Z WARN httpd: caught SIGBUS
 2020-09-08T10:55:06Z WARN httpd: caught SIGBUS
 2020-09-08T10:55:07Z ERROR Server seems busy
-2020-09-08T10:55:08Z ERROR attempting to dump core in …
-2020-09-08T10:55:09Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:55:10Z INFO application terminated
-2020-09-08T10:55:11Z INFO application started
-2020-09-08T10:55:12Z ERROR Server seems busy
-2020-09-08T10:55:13Z ERROR the server is not responded
-2020-09-08T10:55:14Z INFO application terminated
-2020-09-08T10:55:15Z INFO application terminated
-2020-09-08T10:55:16Z WARN httpd: caught SIGBUS
+2020-09-08T10:55:08Z ERROR attempting to dump core in
 2020-09-08T10:55:17Z INFO application started
 2020-09-08T10:55:18Z INFO application finished
 2020-09-08T10:55:19Z INFO application started
@@ -209,30 +111,8 @@
 2020-09-08T10:55:29Z INFO application started
 2020-09-08T10:55:30Z ERROR an exception occurred
 2020-09-08T10:55:31Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:55:32Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:55:33Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:55:34Z ERROR an exception occurred
-2020-09-08T10:55:35Z ERROR an exception occurred
-2020-09-08T10:55:36Z ERROR attempting to dump core in …
-2020-09-08T10:55:37Z ERROR attempting to dump core in …
-2020-09-08T10:55:38Z ERROR attempting to dump core in …
-2020-09-08T10:55:39Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:55:40Z INFO application terminated
-2020-09-08T10:55:41Z ERROR an exception occurred
-2020-09-08T10:55:42Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:55:43Z WARN httpd: caught SIGBUS
-2020-09-08T10:55:44Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:55:45Z INFO application terminated
-2020-09-08T10:55:46Z ERROR attempting to dump core in …
-2020-09-08T10:55:47Z ERROR attempting to dump core in …
-2020-09-08T10:55:48Z WARN httpd: caught SIGBUS
 2020-09-08T10:55:49Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:55:50Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T10:55:51Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:55:52Z INFO application started
-2020-09-08T10:55:53Z INFO application terminated
-2020-09-08T10:55:54Z ERROR Server seems busy
-2020-09-08T10:55:55Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:55:56Z INFO application terminated
 2020-09-08T10:55:57Z INFO application finished
 2020-09-08T10:55:58Z WARN httpd: caught SIGBUS
@@ -248,11 +128,6 @@
 2020-09-08T10:56:09Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:56:10Z INFO application started
 2020-09-08T10:56:11Z ERROR Server seems busy
-2020-09-08T10:56:12Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:56:13Z ERROR the server is not responded
-2020-09-08T10:56:14Z ERROR an exception occurred
-2020-09-08T10:56:15Z ERROR attempting to dump core in …
-2020-09-08T10:56:16Z WARN httpd: caught SIGBUS
 2020-09-08T10:56:17Z INFO application finished
 2020-09-08T10:56:18Z INFO application finished
 2020-09-08T10:56:19Z INFO application finished
@@ -339,9 +214,6 @@
 2020-09-08T10:57:41Z ERROR attempting to dump core in …
 2020-09-08T10:57:42Z INFO application terminated
 2020-09-08T10:57:43Z ERROR Server seems busy
-2020-09-08T10:57:44Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:57:45Z INFO application finished
-2020-09-08T10:57:46Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:57:47Z ERROR the server is not responded
 2020-09-08T10:57:48Z ERROR the server is not responded
 2020-09-08T10:57:49Z ERROR attempting to dump core in …
@@ -353,14 +225,6 @@
 2020-09-08T10:57:55Z ERROR an exception occurred
 2020-09-08T10:57:56Z ERROR attempting to dump core in …
 2020-09-08T10:57:57Z WARN httpd: caught SIGBUS
-2020-09-08T10:57:58Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:58:00Z ERROR an exception occurred
-2020-09-08T10:58:01Z ERROR Server seems busy
-2020-09-08T10:58:02Z INFO application finished
-2020-09-08T10:58:03Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:58:04Z ERROR an exception occurred
-2020-09-08T10:58:05Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:58:06Z WARN httpd: caught SIGBUS
 2020-09-08T10:58:07Z ERROR attempting to dump core in …
 2020-09-08T10:58:08Z ERROR attempting to dump core in …
 2020-09-08T10:58:09Z WARN httpd: caught SIGBUS
@@ -373,9 +237,6 @@
 2020-09-08T10:58:16Z WARN httpd: caught SIGBUS
 2020-09-08T10:58:17Z INFO application started
 2020-09-08T10:58:18Z WARN httpd: caught SIGBUS
-2020-09-08T10:58:19Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:58:20Z ERROR an exception occurred
-2020-09-08T10:58:21Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T10:58:22Z ERROR an exception occurred
 2020-09-08T10:58:23Z ERROR attempting to dump core in …
 2020-09-08T10:58:24Z INFO application started
@@ -401,12 +262,6 @@
 2020-09-08T10:58:44Z ERROR Server seems busy
 2020-09-08T10:58:45Z ERROR Server seems busy
 2020-09-08T10:58:46Z INFO application terminated
-2020-09-08T10:58:47Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T10:58:48Z INFO application finished
-2020-09-08T10:58:49Z INFO application started
-2020-09-08T10:58:50Z INFO application terminated
-2020-09-08T10:58:51Z ERROR attempting to dump core in …
-2020-09-08T10:58:52Z WARN httpd: caught SIGBUS
 2020-09-08T10:58:53Z ERROR Server seems busy
 2020-09-08T10:58:54Z INFO application finished
 2020-09-08T10:58:55Z INFO application terminated
@@ -419,25 +274,12 @@
 2020-09-08T11:00:03Z ERROR attempting to dump core in …
 2020-09-08T11:00:04Z ERROR Server seems busy
 2020-09-08T11:00:05Z INFO application terminated
-2020-09-08T11:00:06Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:00:07Z INFO application terminated
-2020-09-08T11:00:08Z INFO application started
-2020-09-08T11:00:09Z ERROR attempting to dump core in …
-2020-09-08T11:00:10Z ERROR an exception occurred
-2020-09-08T11:00:11Z ERROR an exception occurred
-2020-09-08T11:00:12Z INFO application terminated
-2020-09-08T11:00:13Z INFO application terminated
-2020-09-08T11:00:14Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:00:15Z WARN httpd: caught SIGBUS
 2020-09-08T11:00:16Z ERROR Server seems busy
 2020-09-08T11:00:17Z INFO application started
 2020-09-08T11:00:18Z INFO application terminated
 2020-09-08T11:00:19Z INFO application terminated
 2020-09-08T11:00:20Z WARN httpd: caught SIGBUS
 2020-09-08T11:00:21Z INFO application started
-2020-09-08T11:00:22Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:00:23Z INFO application finished
-2020-09-08T11:00:24Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:00:25Z ERROR attempting to dump core in …
 2020-09-08T11:00:26Z ERROR the server is not responded
 2020-09-08T11:00:27Z INFO application started
@@ -450,8 +292,6 @@
 2020-09-08T11:00:34Z INFO application terminated
 2020-09-08T11:00:35Z ERROR an exception occurred
 2020-09-08T11:00:36Z ERROR attempting to dump core in …
-2020-09-08T11:00:37Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:00:38Z ERROR attempting to dump core in …
 2020-09-08T11:00:39Z WARN httpd: caught SIGBUS
 2020-09-08T11:00:40Z ERROR Server seems busy
 2020-09-08T11:00:41Z INFO application started
@@ -2296,49 +2136,6 @@
 2020-09-08T11:31:51Z INFO application finished
 2020-09-08T11:31:52Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:31:53Z ERROR attempting to dump core in …
-2020-09-08T11:31:54Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:31:55Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:31:56Z INFO application finished
-2020-09-08T11:31:57Z ERROR the server is not responded
-2020-09-08T11:31:58Z INFO application started
-2020-09-08T11:32:00Z INFO application started
-2020-09-08T11:32:01Z INFO application terminated
-2020-09-08T11:32:02Z ERROR the server is not responded
-2020-09-08T11:32:03Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:04Z ERROR an exception occurred
-2020-09-08T11:32:05Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:06Z ERROR attempting to dump core in …
-2020-09-08T11:32:07Z ERROR an exception occurred
-2020-09-08T11:32:08Z INFO application terminated
-2020-09-08T11:32:09Z INFO application finished
-2020-09-08T11:32:10Z INFO application started
-2020-09-08T11:32:11Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:12Z INFO application finished
-2020-09-08T11:32:13Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:14Z INFO application finished
-2020-09-08T11:32:15Z INFO application terminated
-2020-09-08T11:32:16Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:17Z INFO application terminated
-2020-09-08T11:32:18Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:19Z INFO application started
-2020-09-08T11:32:20Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:21Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:22Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:23Z INFO application terminated
-2020-09-08T11:32:24Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:25Z INFO application started
-2020-09-08T11:32:26Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:27Z INFO application terminated
-2020-09-08T11:32:28Z ERROR Server seems busy
-2020-09-08T11:32:29Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:30Z INFO application started
-2020-09-08T11:32:31Z INFO application started
-2020-09-08T11:32:32Z ERROR Server seems busy
-2020-09-08T11:32:33Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:34Z INFO application started
-2020-09-08T11:32:35Z INFO application terminated
-2020-09-08T11:32:36Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:37Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:32:38Z INFO application started
 2020-09-08T11:32:39Z WARN httpd: caught SIGBUS
 2020-09-08T11:32:40Z ERROR the server is not responded
@@ -2351,13 +2148,6 @@
 2020-09-08T11:32:47Z INFO application terminated
 2020-09-08T11:32:48Z ERROR Server seems busy
 2020-09-08T11:32:49Z WARN httpd: caught SIGBUS
-2020-09-08T11:32:50Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:32:51Z ERROR the server is not responded
-2020-09-08T11:32:52Z ERROR Server seems busy
-2020-09-08T11:32:53Z ERROR attempting to dump core in …
-2020-09-08T11:32:54Z INFO application terminated
-2020-09-08T11:32:55Z ERROR the server is not responded
-2020-09-08T11:32:56Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:32:57Z ERROR attempting to dump core in …
 2020-09-08T11:32:58Z INFO application terminated
 2020-09-08T11:33:00Z INFO application terminated
@@ -2368,52 +2158,11 @@
 2020-09-08T11:33:05Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:33:06Z INFO application terminated
 2020-09-08T11:33:07Z ERROR attempting to dump core in …
-2020-09-08T11:33:08Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:33:09Z INFO application started
-2020-09-08T11:33:10Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:33:11Z ERROR the server is not responded
-2020-09-08T11:33:12Z ERROR an exception occurred
-2020-09-08T11:33:13Z ERROR Server seems busy
-2020-09-08T11:33:14Z INFO application terminated
-2020-09-08T11:33:15Z ERROR attempting to dump core in …
-2020-09-08T11:33:16Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:33:17Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:33:18Z ERROR Server seems busy
-2020-09-08T11:33:19Z ERROR an exception occurred
-2020-09-08T11:33:20Z ERROR attempting to dump core in …
-2020-09-08T11:33:21Z INFO application terminated
-2020-09-08T11:33:22Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:33:23Z ERROR the server is not responded
-2020-09-08T11:33:24Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:33:25Z ERROR the server is not responded
-2020-09-08T11:33:26Z INFO application finished
-2020-09-08T11:33:27Z INFO application started
-2020-09-08T11:33:28Z INFO application terminated
-2020-09-08T11:33:29Z ERROR the server is not responded
-2020-09-08T11:33:30Z ERROR an exception occurred
-2020-09-08T11:33:31Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:33:32Z INFO application finished
-2020-09-08T11:33:33Z ERROR the server is not responded
-2020-09-08T11:33:34Z INFO application terminated
-2020-09-08T11:33:35Z ERROR Server seems busy
-2020-09-08T11:33:36Z INFO application finished
-2020-09-08T11:33:37Z ERROR attempting to dump core in …
-2020-09-08T11:33:38Z INFO application terminated
-2020-09-08T11:33:39Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:33:40Z INFO application finished
 2020-09-08T11:33:41Z ERROR an exception occurred
 2020-09-08T11:33:42Z ERROR an exception occurred
 2020-09-08T11:33:43Z WARN httpd: caught SIGBUS
 2020-09-08T11:33:44Z INFO application finished
-2020-09-08T11:33:45Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:33:46Z INFO application terminated
-2020-09-08T11:33:47Z ERROR the server is not responded
-2020-09-08T11:33:48Z ERROR attempting to dump core in …
-2020-09-08T11:33:49Z ERROR attempting to dump core in …
-2020-09-08T11:33:50Z WARN httpd: caught SIGBUS
-2020-09-08T11:33:51Z ERROR attempting to dump core in …
-2020-09-08T11:33:52Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:33:53Z WARN httpd: caught SIGBUS
 2020-09-08T11:33:54Z ERROR attempting to dump core in …
 2020-09-08T11:33:55Z ERROR attempting to dump core in …
 2020-09-08T11:33:56Z ERROR attempting to dump core in …
@@ -2469,33 +2218,6 @@
 2020-09-08T11:34:47Z ERROR an exception occurred
 2020-09-08T11:34:48Z INFO application finished
 2020-09-08T11:34:49Z ERROR Server seems busy
-2020-09-08T11:34:50Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:34:51Z INFO application terminated
-2020-09-08T11:34:52Z ERROR attempting to dump core in …
-2020-09-08T11:34:53Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:34:54Z WARN httpd: caught SIGBUS
-2020-09-08T11:34:55Z ERROR attempting to dump core in …
-2020-09-08T11:34:56Z INFO application terminated
-2020-09-08T11:34:57Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:34:58Z ERROR Server seems busy
-2020-09-08T11:35:00Z ERROR Server seems busy
-2020-09-08T11:35:01Z INFO application finished
-2020-09-08T11:35:02Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:03Z ERROR the server is not responded
-2020-09-08T11:35:04Z WARN httpd: caught SIGBUS
-2020-09-08T11:35:05Z ERROR an exception occurred
-2020-09-08T11:35:06Z INFO application terminated
-2020-09-08T11:35:07Z ERROR Server seems busy
-2020-09-08T11:35:08Z INFO application started
-2020-09-08T11:35:09Z INFO application finished
-2020-09-08T11:35:10Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:11Z INFO application terminated
-2020-09-08T11:35:12Z ERROR Server seems busy
-2020-09-08T11:35:13Z ERROR an exception occurred
-2020-09-08T11:35:14Z WARN httpd: caught SIGBUS
-2020-09-08T11:35:15Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:16Z ERROR an exception occurred
-2020-09-08T11:35:17Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:35:18Z INFO application terminated
 2020-09-08T11:35:19Z INFO application terminated
 2020-09-08T11:35:20Z INFO application terminated
@@ -2512,41 +2234,6 @@
 2020-09-08T11:35:31Z ERROR an exception occurred
 2020-09-08T11:35:32Z ERROR an exception occurred
 2020-09-08T11:35:33Z INFO application started
-2020-09-08T11:35:34Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:35Z INFO application started
-2020-09-08T11:35:36Z INFO application started
-2020-09-08T11:35:37Z INFO application terminated
-2020-09-08T11:35:38Z INFO application started
-2020-09-08T11:35:39Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:35:40Z INFO application finished
-2020-09-08T11:35:41Z ERROR the server is not responded
-2020-09-08T11:35:42Z ERROR an exception occurred
-2020-09-08T11:35:43Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:44Z INFO application finished
-2020-09-08T11:35:45Z ERROR Server seems busy
-2020-09-08T11:35:46Z ERROR an exception occurred
-2020-09-08T11:35:47Z INFO application finished
-2020-09-08T11:35:48Z INFO application finished
-2020-09-08T11:35:49Z ERROR the server is not responded
-2020-09-08T11:35:50Z INFO application started
-2020-09-08T11:35:51Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:52Z INFO application terminated
-2020-09-08T11:35:53Z ERROR the server is not responded
-2020-09-08T11:35:54Z INFO application started
-2020-09-08T11:35:55Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:35:56Z ERROR an exception occurred
-2020-09-08T11:35:57Z ERROR the server is not responded
-2020-09-08T11:35:58Z INFO application finished
-2020-09-08T11:36:00Z ERROR attempting to dump core in …
-2020-09-08T11:36:01Z ERROR attempting to dump core in …
-2020-09-08T11:36:02Z INFO application finished
-2020-09-08T11:36:03Z ERROR the server is not responded
-2020-09-08T11:36:04Z INFO application finished
-2020-09-08T11:36:05Z ERROR attempting to dump core in …
-2020-09-08T11:36:06Z ERROR an exception occurred
-2020-09-08T11:36:07Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:36:08Z ERROR the server is not responded
-2020-09-08T11:36:09Z WARN httpd: caught SIGBUS
 2020-09-08T11:36:10Z ERROR an exception occurred
 2020-09-08T11:36:11Z INFO application finished
 2020-09-08T11:36:12Z ERROR Server seems busy
@@ -2562,9 +2249,6 @@
 2020-09-08T11:36:22Z INFO application finished
 2020-09-08T11:36:23Z ERROR the server is not responded
 2020-09-08T11:36:24Z WARN httpd: caught SIGBUS
-2020-09-08T11:36:25Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:36:26Z ERROR Server seems busy
-2020-09-08T11:36:27Z WARN httpd: caught SIGBUS
 2020-09-08T11:36:28Z ERROR an exception occurred
 2020-09-08T11:36:29Z INFO application terminated
 2020-09-08T11:36:30Z INFO application terminated
@@ -2586,88 +2270,11 @@
 2020-09-08T11:36:46Z ERROR Server seems busy
 2020-09-08T11:36:47Z INFO application started
 2020-09-08T11:36:48Z INFO application finished
-2020-09-08T11:36:49Z ERROR attempting to dump core in …
-2020-09-08T11:36:50Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:36:51Z INFO application terminated
-2020-09-08T11:36:52Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:36:53Z ERROR Server seems busy
-2020-09-08T11:36:54Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:36:55Z INFO application finished
-2020-09-08T11:36:56Z WARN httpd: caught SIGBUS
-2020-09-08T11:36:57Z WARN httpd: caught SIGBUS
-2020-09-08T11:36:58Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:00Z INFO application started
-2020-09-08T11:37:01Z INFO application finished
-2020-09-08T11:37:02Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:03Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:37:04Z WARN httpd: caught SIGBUS
-2020-09-08T11:37:05Z INFO application finished
-2020-09-08T11:37:06Z ERROR the server is not responded
-2020-09-08T11:37:07Z WARN httpd: caught SIGBUS
-2020-09-08T11:37:08Z ERROR attempting to dump core in …
-2020-09-08T11:37:09Z ERROR Server seems busy
-2020-09-08T11:37:10Z ERROR Server seems busy
-2020-09-08T11:37:11Z WARN httpd: caught SIGBUS
-2020-09-08T11:37:12Z ERROR the server is not responded
-2020-09-08T11:37:13Z ERROR attempting to dump core in …
-2020-09-08T11:37:14Z INFO application finished
-2020-09-08T11:37:15Z ERROR an exception occurred
-2020-09-08T11:37:16Z INFO application finished
-2020-09-08T11:37:17Z ERROR an exception occurred
-2020-09-08T11:37:18Z ERROR Server seems busy
-2020-09-08T11:37:19Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:20Z ERROR Server seems busy
-2020-09-08T11:37:21Z ERROR the server is not responded
-2020-09-08T11:37:22Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:37:23Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:24Z INFO application started
-2020-09-08T11:37:25Z INFO application started
-2020-09-08T11:37:26Z ERROR an exception occurred
-2020-09-08T11:37:27Z ERROR attempting to dump core in …
-2020-09-08T11:37:28Z ERROR Server seems busy
-2020-09-08T11:37:29Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:37:30Z INFO application terminated
-2020-09-08T11:37:31Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:37:32Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:33Z INFO application started
-2020-09-08T11:37:34Z ERROR an exception occurred
-2020-09-08T11:37:35Z ERROR the server is not responded
-2020-09-08T11:37:36Z WARN httpd: caught SIGBUS
-2020-09-08T11:37:37Z INFO application terminated
-2020-09-08T11:37:38Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:39Z ERROR Server seems busy
-2020-09-08T11:37:40Z INFO application terminated
-2020-09-08T11:37:41Z ERROR an exception occurred
-2020-09-08T11:37:42Z ERROR attempting to dump core in …
-2020-09-08T11:37:43Z WARN httpd: caught SIGBUS
-2020-09-08T11:37:44Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:45Z ERROR Server seems busy
-2020-09-08T11:37:46Z INFO application terminated
-2020-09-08T11:37:47Z INFO application terminated
-2020-09-08T11:37:48Z ERROR an exception occurred
-2020-09-08T11:37:49Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:37:50Z ERROR the server is not responded
-2020-09-08T11:37:51Z ERROR Server seems busy
-2020-09-08T11:37:52Z INFO application finished
-2020-09-08T11:37:53Z ERROR the server is not responded
-2020-09-08T11:37:54Z WARN httpd: caught SIGBUS
 2020-09-08T11:37:55Z INFO application terminated
 2020-09-08T11:37:56Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:37:57Z WARN httpd: caught SIGBUS
 2020-09-08T11:37:58Z ERROR the server is not responded
 2020-09-08T11:38:00Z ERROR attempting to dump core in …
-2020-09-08T11:38:01Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:02Z INFO application terminated
-2020-09-08T11:38:03Z INFO application terminated
-2020-09-08T11:38:04Z ERROR attempting to dump core in …
-2020-09-08T11:38:05Z INFO application started
-2020-09-08T11:38:06Z ERROR an exception occurred
-2020-09-08T11:38:07Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:38:08Z ERROR an exception occurred
-2020-09-08T11:38:09Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:38:10Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:11Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:12Z WARN httpd: caught SIGBUS
 2020-09-08T11:38:13Z ERROR attempting to dump core in …
 2020-09-08T11:38:14Z INFO application finished
 2020-09-08T11:38:15Z INFO application terminated
@@ -2685,51 +2292,6 @@
 2020-09-08T11:38:27Z ERROR the server is not responded
 2020-09-08T11:38:28Z INFO application started
 2020-09-08T11:38:29Z INFO application started
-2020-09-08T11:38:30Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:31Z ERROR Server seems busy
-2020-09-08T11:38:32Z ERROR the server is not responded
-2020-09-08T11:38:33Z ERROR the server is not responded
-2020-09-08T11:38:34Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:35Z ERROR attempting to dump core in …
-2020-09-08T11:38:36Z ERROR Server seems busy
-2020-09-08T11:38:37Z INFO application terminated
-2020-09-08T11:38:38Z ERROR the server is not responded
-2020-09-08T11:38:39Z ERROR Server seems busy
-2020-09-08T11:38:40Z ERROR an exception occurred
-2020-09-08T11:38:41Z INFO application terminated
-2020-09-08T11:38:42Z ERROR an exception occurred
-2020-09-08T11:38:43Z ERROR the server is not responded
-2020-09-08T11:38:44Z INFO application started
-2020-09-08T11:38:45Z INFO application terminated
-2020-09-08T11:38:46Z WARN httpd: caught SIGBUS
-2020-09-08T11:38:47Z INFO application started
-2020-09-08T11:38:48Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:49Z INFO application started
-2020-09-08T11:38:50Z ERROR an exception occurred
-2020-09-08T11:38:51Z INFO application started
-2020-09-08T11:38:52Z ERROR an exception occurred
-2020-09-08T11:38:53Z WARN httpd: caught SIGBUS
-2020-09-08T11:38:54Z ERROR the server is not responded
-2020-09-08T11:38:55Z INFO application terminated
-2020-09-08T11:38:56Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:38:57Z ERROR Server seems busy
-2020-09-08T11:38:58Z INFO application started
-2020-09-08T11:39:00Z WARN httpd: caught SIGBUS
-2020-09-08T11:39:01Z INFO application terminated
-2020-09-08T11:39:02Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:03Z ERROR Server seems busy
-2020-09-08T11:39:04Z ERROR attempting to dump core in …
-2020-09-08T11:39:05Z WARN httpd: caught SIGBUS
-2020-09-08T11:39:06Z ERROR the server is not responded
-2020-09-08T11:39:07Z INFO application terminated
-2020-09-08T11:39:08Z INFO application terminated
-2020-09-08T11:39:09Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:10Z ERROR an exception occurred
-2020-09-08T11:39:11Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:39:12Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:39:13Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:14Z ERROR the server is not responded
-2020-09-08T11:39:15Z WARN httpd: caught SIGBUS
 2020-09-08T11:39:16Z INFO application terminated
 2020-09-08T11:39:17Z ERROR attempting to dump core in …
 2020-09-08T11:39:18Z INFO application finished
@@ -2740,16 +2302,6 @@
 2020-09-08T11:39:23Z INFO application finished
 2020-09-08T11:39:24Z INFO application terminated
 2020-09-08T11:39:25Z WARN httpd: caught SIGBUS
-2020-09-08T11:39:26Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:27Z ERROR the server is not responded
-2020-09-08T11:39:28Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:29Z INFO application terminated
-2020-09-08T11:39:30Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:31Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:32Z INFO application terminated
-2020-09-08T11:39:33Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:39:34Z INFO application terminated
-2020-09-08T11:39:35Z WARN httpd: caught SIGBUS
 2020-09-08T11:39:36Z INFO application terminated
 2020-09-08T11:39:37Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:39:38Z ERROR Server seems busy
@@ -2804,78 +2356,7 @@
 2020-09-08T11:40:28Z INFO application terminated
 2020-09-08T11:40:29Z ERROR the server is not responded
 2020-09-08T11:40:30Z WARN httpd: caught SIGBUS
-2020-09-08T11:40:31Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:40:32Z INFO application finished
-2020-09-08T11:40:33Z INFO application started
-2020-09-08T11:40:34Z ERROR the server is not responded
-2020-09-08T11:40:35Z ERROR the server is not responded
-2020-09-08T11:40:36Z WARN httpd: caught SIGBUS
-2020-09-08T11:40:37Z INFO application started
-2020-09-08T11:40:38Z ERROR attempting to dump core in …
-2020-09-08T11:40:39Z ERROR the server is not responded
-2020-09-08T11:40:40Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:40:41Z ERROR the server is not responded
-2020-09-08T11:40:42Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:40:43Z ERROR the server is not responded
-2020-09-08T11:40:44Z ERROR the server is not responded
-2020-09-08T11:40:45Z INFO application finished
-2020-09-08T11:40:46Z ERROR attempting to dump core in …
-2020-09-08T11:40:47Z ERROR an exception occurred
-2020-09-08T11:40:48Z ERROR attempting to dump core in …
-2020-09-08T11:40:49Z ERROR an exception occurred
-2020-09-08T11:40:50Z ERROR attempting to dump core in …
-2020-09-08T11:40:51Z INFO application finished
-2020-09-08T11:40:52Z INFO application finished
-2020-09-08T11:40:53Z ERROR Server seems busy
-2020-09-08T11:40:54Z ERROR an exception occurred
-2020-09-08T11:40:55Z ERROR an exception occurred
-2020-09-08T11:40:56Z INFO application terminated
-2020-09-08T11:40:57Z INFO application started
-2020-09-08T11:40:58Z ERROR Server seems busy
-2020-09-08T11:41:00Z ERROR Server seems busy
-2020-09-08T11:41:01Z INFO application terminated
-2020-09-08T11:41:02Z WARN httpd: caught SIGBUS
-2020-09-08T11:41:03Z ERROR the server is not responded
-2020-09-08T11:41:04Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:41:05Z WARN httpd: caught SIGBUS
-2020-09-08T11:41:06Z INFO application finished
-2020-09-08T11:41:07Z INFO application finished
-2020-09-08T11:41:08Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:09Z INFO application terminated
-2020-09-08T11:41:10Z INFO application terminated
-2020-09-08T11:41:11Z ERROR attempting to dump core in …
-2020-09-08T11:41:12Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:13Z INFO application finished
-2020-09-08T11:41:14Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:15Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:41:16Z INFO application terminated
-2020-09-08T11:41:17Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:18Z ERROR an exception occurred
-2020-09-08T11:41:19Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:20Z ERROR the server is not responded
-2020-09-08T11:41:21Z ERROR Server seems busy
-2020-09-08T11:41:22Z ERROR an exception occurred
-2020-09-08T11:41:23Z ERROR an exception occurred
-2020-09-08T11:41:24Z ERROR the server is not responded
-2020-09-08T11:41:25Z WARN httpd: caught SIGBUS
-2020-09-08T11:41:26Z INFO application terminated
-2020-09-08T11:41:27Z ERROR an exception occurred
-2020-09-08T11:41:28Z INFO application finished
-2020-09-08T11:41:29Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:41:30Z ERROR attempting to dump core in …
-2020-09-08T11:41:31Z ERROR Server seems busy
-2020-09-08T11:41:32Z ERROR Server seems busy
-2020-09-08T11:41:33Z ERROR an exception occurred
-2020-09-08T11:41:34Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:41:35Z INFO application terminated
-2020-09-08T11:41:36Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:37Z INFO application started
-2020-09-08T11:41:38Z WARN httpd: caught SIGBUS
-2020-09-08T11:41:39Z INFO application started
-2020-09-08T11:41:40Z ERROR the server is not responded
-2020-09-08T11:41:41Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:41:42Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:43Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:41:44Z ERROR an exception occurred
 2020-09-08T11:41:45Z WARN httpd: caught SIGBUS
 2020-09-08T11:41:46Z ERROR an exception occurred
@@ -2883,12 +2364,6 @@
 2020-09-08T11:41:48Z INFO application terminated
 2020-09-08T11:41:49Z ERROR attempting to dump core in …
 2020-09-08T11:41:50Z INFO application terminated
-2020-09-08T11:41:51Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:52Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:41:53Z ERROR the server is not responded
-2020-09-08T11:41:54Z ERROR an exception occurred
-2020-09-08T11:41:55Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:41:56Z ERROR Server seems busy
 2020-09-08T11:41:57Z WARN httpd: caught SIGBUS
 2020-09-08T11:41:58Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:42:00Z ERROR an exception occurred
@@ -2922,15 +2397,6 @@
 2020-09-08T11:42:28Z INFO application finished
 2020-09-08T11:42:29Z INFO application finished
 2020-09-08T11:42:30Z ERROR attempting to dump core in …
-2020-09-08T11:42:31Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:42:32Z INFO application started
-2020-09-08T11:42:33Z INFO application started
-2020-09-08T11:42:34Z WARN httpd: caught SIGBUS
-2020-09-08T11:42:35Z INFO application terminated
-2020-09-08T11:42:36Z INFO application terminated
-2020-09-08T11:42:37Z INFO application finished
-2020-09-08T11:42:38Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:42:39Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:42:40Z WARN httpd: caught SIGBUS
 2020-09-08T11:42:41Z WARN httpd: caught SIGBUS
 2020-09-08T11:42:42Z INFO application terminated
@@ -2939,34 +2405,6 @@
 2020-09-08T11:42:45Z ERROR the server is not responded
 2020-09-08T11:42:46Z WARN httpd: caught SIGBUS
 2020-09-08T11:42:47Z ERROR the server is not responded
-2020-09-08T11:42:48Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:42:49Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:42:50Z INFO application started
-2020-09-08T11:42:51Z INFO application terminated
-2020-09-08T11:42:52Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:42:53Z INFO application started
-2020-09-08T11:42:54Z INFO application terminated
-2020-09-08T11:42:55Z ERROR the server is not responded
-2020-09-08T11:42:56Z WARN httpd: caught SIGBUS
-2020-09-08T11:42:57Z INFO application terminated
-2020-09-08T11:42:58Z ERROR attempting to dump core in …
-2020-09-08T11:43:00Z INFO application started
-2020-09-08T11:43:01Z INFO application terminated
-2020-09-08T11:43:02Z WARN httpd: caught SIGBUS
-2020-09-08T11:43:03Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:43:04Z ERROR attempting to dump core in …
-2020-09-08T11:43:05Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:43:06Z ERROR Server seems busy
-2020-09-08T11:43:07Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:43:08Z WARN httpd: caught SIGBUS
-2020-09-08T11:43:09Z ERROR Server seems busy
-2020-09-08T11:43:10Z ERROR an exception occurred
-2020-09-08T11:43:11Z ERROR an exception occurred
-2020-09-08T11:43:12Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:43:13Z ERROR attempting to dump core in …
-2020-09-08T11:43:14Z ERROR attempting to dump core in …
-2020-09-08T11:43:15Z ERROR the server is not responded
-2020-09-08T11:43:16Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:43:17Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:43:18Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:43:19Z INFO application terminated
@@ -2988,8 +2426,6 @@
 2020-09-08T11:43:35Z ERROR the server is not responded
 2020-09-08T11:43:36Z ERROR the server is not responded
 2020-09-08T11:43:37Z ERROR attempting to dump core in …
-2020-09-08T11:43:38Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:43:39Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:43:40Z WARN httpd: caught SIGBUS
 2020-09-08T11:43:41Z ERROR the server is not responded
 2020-09-08T11:43:42Z ERROR socket: Failed to get a socket, exiting child
@@ -3007,8 +2443,6 @@
 2020-09-08T11:43:54Z INFO application started
 2020-09-08T11:43:55Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:43:56Z INFO application started
-2020-09-08T11:43:57Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:43:58Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:44:00Z ERROR Server seems busy
 2020-09-08T11:44:01Z ERROR attempting to dump core in …
 2020-09-08T11:44:02Z ERROR an exception occurred
@@ -3024,42 +2458,11 @@
 2020-09-08T11:44:12Z INFO application terminated
 2020-09-08T11:44:13Z INFO application finished
 2020-09-08T11:44:14Z ERROR an exception occurred
-2020-09-08T11:44:15Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:16Z ERROR attempting to dump core in …
-2020-09-08T11:44:17Z INFO application finished
-2020-09-08T11:44:18Z ERROR the server is not responded
-2020-09-08T11:44:19Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:20Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:21Z ERROR the server is not responded
-2020-09-08T11:44:22Z ERROR attempting to dump core in …
-2020-09-08T11:44:23Z ERROR attempting to dump core in …
-2020-09-08T11:44:24Z INFO application started
-2020-09-08T11:44:25Z ERROR Server seems busy
-2020-09-08T11:44:26Z ERROR attempting to dump core in …
-2020-09-08T11:44:27Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:28Z ERROR the server is not responded
-2020-09-08T11:44:29Z ERROR an exception occurred
-2020-09-08T11:44:30Z INFO application terminated
-2020-09-08T11:44:31Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:44:32Z WARN httpd: caught SIGBUS
-2020-09-08T11:44:33Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:34Z INFO application terminated
-2020-09-08T11:44:35Z ERROR attempting to dump core in …
-2020-09-08T11:44:36Z WARN httpd: caught SIGBUS
 2020-09-08T11:44:37Z ERROR Server seems busy
 2020-09-08T11:44:38Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:44:39Z ERROR Server seems busy
 2020-09-08T11:44:40Z INFO application started
 2020-09-08T11:44:41Z INFO application started
-2020-09-08T11:44:42Z INFO application finished
-2020-09-08T11:44:43Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:44Z ERROR attempting to dump core in …
-2020-09-08T11:44:45Z ERROR Server seems busy
-2020-09-08T11:44:46Z INFO application terminated
-2020-09-08T11:44:47Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:44:48Z WARN httpd: caught SIGBUS
-2020-09-08T11:44:49Z ERROR Server seems busy
-2020-09-08T11:44:50Z WARN httpd: caught SIGBUS
 2020-09-08T11:44:51Z ERROR Server seems busy
 2020-09-08T11:44:52Z INFO application started
 2020-09-08T11:44:53Z INFO application finished
@@ -3068,21 +2471,6 @@
 2020-09-08T11:44:56Z ERROR Server seems busy
 2020-09-08T11:44:57Z ERROR attempting to dump core in …
 2020-09-08T11:44:58Z ERROR an exception occurred
-2020-09-08T11:45:00Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:01Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:02Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:03Z WARN httpd: caught SIGBUS
-2020-09-08T11:45:04Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:05Z INFO application started
-2020-09-08T11:45:06Z ERROR the server is not responded
-2020-09-08T11:45:07Z ERROR Server seems busy
-2020-09-08T11:45:08Z ERROR Server seems busy
-2020-09-08T11:45:09Z INFO application terminated
-2020-09-08T11:45:10Z ERROR Server seems busy
-2020-09-08T11:45:11Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:12Z WARN httpd: caught SIGBUS
-2020-09-08T11:45:13Z INFO application finished
-2020-09-08T11:45:14Z WARN httpd: caught SIGBUS
 2020-09-08T11:45:15Z ERROR the server is not responded
 2020-09-08T11:45:16Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:45:17Z ERROR an exception occurred
@@ -3096,11 +2484,6 @@
 2020-09-08T11:45:25Z ERROR an exception occurred
 2020-09-08T11:45:26Z ERROR an exception occurred
 2020-09-08T11:45:27Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:28Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:29Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:30Z ERROR the server is not responded
-2020-09-08T11:45:31Z ERROR Server seems busy
-2020-09-08T11:45:32Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:45:33Z ERROR the server is not responded
 2020-09-08T11:45:34Z INFO application started
 2020-09-08T11:45:35Z INFO application started
@@ -3112,28 +2495,9 @@
 2020-09-08T11:45:41Z INFO application finished
 2020-09-08T11:45:42Z ERROR Server seems busy
 2020-09-08T11:45:43Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:44Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:45Z INFO application started
-2020-09-08T11:45:46Z ERROR the server is not responded
-2020-09-08T11:45:47Z ERROR attempting to dump core in …
-2020-09-08T11:45:48Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:49Z WARN httpd: caught SIGBUS
-2020-09-08T11:45:50Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:51Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:45:52Z ERROR attempting to dump core in …
-2020-09-08T11:45:53Z ERROR Server seems busy
-2020-09-08T11:45:54Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:45:55Z INFO application started
-2020-09-08T11:45:56Z WARN httpd: caught SIGBUS
 2020-09-08T11:45:57Z INFO application terminated
 2020-09-08T11:45:58Z ERROR an exception occurred
 2020-09-08T11:46:00Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:46:01Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:46:02Z INFO application terminated
-2020-09-08T11:46:03Z INFO application finished
-2020-09-08T11:46:04Z INFO application finished
-2020-09-08T11:46:05Z INFO application terminated
-2020-09-08T11:46:06Z WARN httpd: caught SIGBUS
 2020-09-08T11:46:07Z ERROR the server is not responded
 2020-09-08T11:46:08Z INFO application started
 2020-09-08T11:46:09Z WARN httpd: caught SIGBUS
@@ -3151,11 +2515,7 @@
 2020-09-08T11:46:21Z ERROR an exception occurred
 2020-09-08T11:46:22Z ERROR attempting to dump core in …
 2020-09-08T11:46:23Z ERROR attempting to dump core in …
-2020-09-08T11:46:24Z ERROR attempting to dump core in …
-2020-09-08T11:46:25Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:46:26Z INFO application terminated
-2020-09-08T11:46:27Z WARN httpd: caught SIGBUS
-2020-09-08T11:46:28Z INFO application terminated
+2020-09-08T11:46:24Z ERROR attempting to dump core in
 2020-09-08T11:46:29Z ERROR the server is not responded
 2020-09-08T11:46:30Z ERROR Server seems busy
 2020-09-08T11:46:31Z ERROR attempting to dump core in …
@@ -3194,28 +2554,9 @@
 2020-09-08T11:47:05Z INFO application terminated
 2020-09-08T11:47:06Z ERROR the server is not responded
 2020-09-08T11:47:07Z ERROR Server seems busy
-2020-09-08T11:47:08Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:47:09Z ERROR an exception occurred
-2020-09-08T11:47:10Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:47:11Z ERROR Server seems busy
-2020-09-08T11:47:12Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:47:13Z ERROR attempting to dump core in …
 2020-09-08T11:47:14Z ERROR Server seems busy
 2020-09-08T11:47:15Z ERROR attempting to dump core in …
-2020-09-08T11:47:16Z WARN httpd: caught SIGBUS
-2020-09-08T11:47:17Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:47:18Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:47:19Z ERROR an exception occurred
-2020-09-08T11:47:20Z INFO application finished
-2020-09-08T11:47:21Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:47:22Z INFO application finished
-2020-09-08T11:47:23Z INFO application started
-2020-09-08T11:47:24Z INFO application started
-2020-09-08T11:47:25Z ERROR attempting to dump core in …
-2020-09-08T11:47:26Z INFO application started
-2020-09-08T11:47:27Z ERROR Server seems busy
-2020-09-08T11:47:28Z ERROR the server is not responded
-2020-09-08T11:47:29Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:47:30Z ERROR Server seems busy
 2020-09-08T11:47:31Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:47:32Z ERROR the server is not responded
@@ -3224,11 +2565,6 @@
 2020-09-08T11:47:35Z INFO application started
 2020-09-08T11:47:36Z ERROR Server seems busy
 2020-09-08T11:47:37Z INFO application started
-2020-09-08T11:47:38Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:47:39Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:47:40Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:47:41Z INFO application terminated
-2020-09-08T11:47:42Z WARN httpd: caught SIGBUS
 2020-09-08T11:47:43Z ERROR the server is not responded
 2020-09-08T11:47:44Z INFO application terminated
 2020-09-08T11:47:45Z WARN httpd: caught SIGBUS
@@ -3247,12 +2583,6 @@
 2020-09-08T11:47:58Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:48:00Z INFO application terminated
 2020-09-08T11:48:01Z INFO application terminated
-2020-09-08T11:48:02Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:48:03Z ERROR the server is not responded
-2020-09-08T11:48:04Z INFO application terminated
-2020-09-08T11:48:05Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:48:06Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:48:07Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:48:08Z INFO application finished
 2020-09-08T11:48:09Z ERROR Server seems busy
 2020-09-08T11:48:10Z INFO application finished
@@ -3285,43 +2615,6 @@
 2020-09-08T11:48:37Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:48:38Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:48:39Z INFO application finished
-2020-09-08T11:48:40Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:48:41Z INFO application finished
-2020-09-08T11:48:42Z INFO application started
-2020-09-08T11:48:43Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:48:44Z INFO application finished
-2020-09-08T11:48:45Z WARN httpd: caught SIGBUS
-2020-09-08T11:48:46Z INFO application finished
-2020-09-08T11:48:47Z ERROR Server seems busy
-2020-09-08T11:48:48Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:48:49Z ERROR the server is not responded
-2020-09-08T11:48:50Z ERROR attempting to dump core in …
-2020-09-08T11:48:51Z ERROR Server seems busy
-2020-09-08T11:48:52Z INFO application finished
-2020-09-08T11:48:53Z INFO application finished
-2020-09-08T11:48:54Z ERROR attempting to dump core in …
-2020-09-08T11:48:55Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:48:56Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:48:57Z ERROR Server seems busy
-2020-09-08T11:48:58Z ERROR Server seems busy
-2020-09-08T11:49:00Z ERROR an exception occurred
-2020-09-08T11:49:01Z ERROR the server is not responded
-2020-09-08T11:49:02Z INFO application finished
-2020-09-08T11:49:03Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:49:04Z ERROR attempting to dump core in …
-2020-09-08T11:49:05Z ERROR Server seems busy
-2020-09-08T11:49:06Z ERROR an exception occurred
-2020-09-08T11:49:07Z INFO application finished
-2020-09-08T11:49:08Z ERROR the server is not responded
-2020-09-08T11:49:09Z INFO application finished
-2020-09-08T11:49:10Z ERROR an exception occurred
-2020-09-08T11:49:11Z ERROR an exception occurred
-2020-09-08T11:49:12Z WARN httpd: caught SIGBUS
-2020-09-08T11:49:13Z ERROR the server is not responded
-2020-09-08T11:49:14Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:49:15Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:49:16Z ERROR the server is not responded
-2020-09-08T11:49:17Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:49:18Z ERROR an exception occurred
 2020-09-08T11:49:19Z ERROR the server is not responded
 2020-09-08T11:49:20Z ERROR socket: Failed to get a socket, exiting child
@@ -3340,11 +2633,6 @@
 2020-09-08T11:49:33Z ERROR an exception occurred
 2020-09-08T11:49:34Z ERROR attempting to dump core in …
 2020-09-08T11:49:35Z INFO application terminated
-2020-09-08T11:49:36Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:49:37Z ERROR attempting to dump core in …
-2020-09-08T11:49:38Z INFO application finished
-2020-09-08T11:49:39Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:49:40Z INFO application finished
 2020-09-08T11:49:41Z INFO application started
 2020-09-08T11:49:42Z ERROR Server seems busy
 2020-09-08T11:49:43Z ERROR the server is not responded
@@ -3361,11 +2649,6 @@
 2020-09-08T11:49:54Z ERROR attempting to dump core in …
 2020-09-08T11:49:55Z ERROR an exception occurred
 2020-09-08T11:49:56Z INFO application terminated
-2020-09-08T11:49:57Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:49:58Z ERROR an exception occurred
-2020-09-08T11:50:00Z INFO application finished
-2020-09-08T11:50:01Z INFO application finished
-2020-09-08T11:50:02Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:50:03Z ERROR the server is not responded
 2020-09-08T11:50:04Z ERROR an exception occurred
 2020-09-08T11:50:05Z ERROR attempting to dump core in …
@@ -3374,21 +2657,6 @@
 2020-09-08T11:50:08Z INFO application terminated
 2020-09-08T11:50:09Z ERROR attempting to dump core in …
 2020-09-08T11:50:10Z INFO application finished
-2020-09-08T11:50:11Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:50:12Z INFO application terminated
-2020-09-08T11:50:13Z INFO application started
-2020-09-08T11:50:14Z ERROR Server seems busy
-2020-09-08T11:50:15Z ERROR attempting to dump core in …
-2020-09-08T11:50:16Z WARN httpd: caught SIGBUS
-2020-09-08T11:50:17Z WARN httpd: caught SIGBUS
-2020-09-08T11:50:18Z ERROR the server is not responded
-2020-09-08T11:50:19Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:50:20Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:50:21Z WARN httpd: caught SIGBUS
-2020-09-08T11:50:22Z INFO application terminated
-2020-09-08T11:50:23Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:50:24Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:50:25Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:50:26Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:50:27Z INFO application started
 2020-09-08T11:50:28Z INFO application started
@@ -3422,10 +2690,6 @@
 2020-09-08T11:50:56Z INFO application terminated
 2020-09-08T11:50:57Z ERROR an exception occurred
 2020-09-08T11:50:58Z ERROR socket: Failed to get a socket, exiting child
-2020-09-08T11:51:00Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:51:01Z ERROR the server is not responded
-2020-09-08T11:51:02Z INFO application terminated
-2020-09-08T11:51:03Z WARN httpd: caught SIGBUS
 2020-09-08T11:51:04Z ERROR the server is not responded
 2020-09-08T11:51:05Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:51:06Z INFO application terminated
@@ -3435,8 +2699,6 @@
 2020-09-08T11:51:10Z ERROR attempting to dump core in …
 2020-09-08T11:51:11Z ERROR attempting to dump core in …
 2020-09-08T11:51:12Z INFO application finished
-2020-09-08T11:51:13Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:51:14Z WARN httpd: caught SIGBUS
 2020-09-08T11:51:15Z ERROR attempting to dump core in …
 2020-09-08T11:51:16Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:51:17Z ERROR attempting to dump core in …
@@ -3445,13 +2707,3 @@
 2020-09-08T11:51:20Z INFO application started
 2020-09-08T11:51:21Z ERROR socket: Failed to get a socket, exiting child
 2020-09-08T11:51:22Z ERROR the server is not responded
-2020-09-08T11:51:23Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:51:24Z INFO application terminated
-2020-09-08T11:51:25Z ERROR the server is not responded
-2020-09-08T11:51:26Z INFO application finished
-2020-09-08T11:51:27Z ERROR an exception occurred
-2020-09-08T11:51:28Z ERROR attempting to dump core in …
-2020-09-08T11:51:29Z WARN httpd: caught SIGBUS
-2020-09-08T11:51:30Z WARN INVOICE 224245 from Power EC Ltd
-2020-09-08T11:51:31Z WARN httpd: caught SIGBUS
-2020-09-08T11:51:32Z INFO application started
