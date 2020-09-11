@@ -3,11 +3,14 @@ package logRepository;
 import org.apache.commons.io.input.ReversedLinesFileReader;
 
 import java.io.*;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 /**
  * Created by Padma Gnanapiya (SE/2017/014)
@@ -170,8 +173,20 @@ public class LogReader {
 
 
 
+        lastTime=System.currentTimeMillis();
+        try (Stream<String> lines = Files.lines(Paths.get(path), Charset.defaultCharset())) {
+            lines.forEachOrdered(line -> process(line));
+        }
+        System.out.println(System.currentTimeMillis()-lastTime);
 
 
+
+    }
+
+    private void process(String line) {
+        if(line.indexOf("ERROR")!=-1){
+//            System.out.println(line);
+        }
     }
 
 
