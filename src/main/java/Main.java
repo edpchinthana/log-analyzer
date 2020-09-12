@@ -26,22 +26,17 @@ public class Main {
 //    String logPath = "src\\main\\java\\test.log";
 
     public static void main(String[] args) throws IOException {
-        String logPath="H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\sampleLogFile.log";
+        String logPath="H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\sampleLogFile2.log";
         String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
 
         LogRepository logRepository=new LogRepository();
 
-        ArrayList<String> errorTimeStampList=logRepository.getErrorTimeList(logPath, "2020-09-13T02:38:04Z ERROR socket: Failed to get a socket, exiting child");
-
+        ArrayList<String> errorTimeStampList=logRepository.getErrorTimeList(logPath, "2020-09-13T31:08:54Z");
 
 
         //~~~~~~~~~~~~~~~~~~Pass error TimeListStamp~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
         long now=System.currentTimeMillis();   // /////////////////////////////////////////////////////////////
-
         for (String s : errorTimeStampList) { System.out.println(s); } // /////////////////////////////////////
-        //Error
-
 
     }
 

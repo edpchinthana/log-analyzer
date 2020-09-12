@@ -31,16 +31,14 @@ public class LogRepository {
     }
 
     private void process(String line) {
-//        if(isReadFromBegin && line.indexOf("ERROR")!=-1){
-//            errorTimeList.add(line.split(" ERROR")[0]);
-//        }
-//        else if(line.contains(lastTimeStamp)){
-//            isReadFromBegin=true;
-//        }
         count++;
-        if(line.indexOf("2020-09-13T02:37:57Z")!=-1){
-            System.out.println(line);
+        if(isReadFromBegin && line.indexOf("ERROR")!=-1){
+            errorTimeList.add(line.split(" ERROR")[0]);
             System.out.println(count);
         }
+        else if(line.contains(lastTimeStamp)){
+            isReadFromBegin=true;
+        }
+
     }
 }
