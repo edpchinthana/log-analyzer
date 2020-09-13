@@ -27,6 +27,11 @@ public class CommandLineInput implements Input{
 
     }
 
+    public int readMenuItem(int max, int min){
+        int item=scanner.nextInt();
+        return item;
+
+    }
 
 
 
