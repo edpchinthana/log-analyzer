@@ -17,6 +17,7 @@ public class LogRepository {
     String lastTimeStamp;
     ArrayList<String> errorTimeList=new ArrayList<>();
     int count =0;
+    final String type="ERROR";
 
     public ArrayList<String> getErrorTimeList(String path, String lastTimeStamp) throws IOException {
         this.lastTimeStamp=lastTimeStamp;
@@ -32,8 +33,8 @@ public class LogRepository {
 
     private void process(String line) {
         count++;
-        if(isReadFromBegin && line.indexOf("ERROR")!=-1){
-            errorTimeList.add(line.split(" ERROR")[0]);
+        if(isReadFromBegin && line.indexOf(type)!=-1){
+            errorTimeList.add(line.split(type)[0]);
             System.out.println(count);
         }
         else if(line.contains(lastTimeStamp)){
