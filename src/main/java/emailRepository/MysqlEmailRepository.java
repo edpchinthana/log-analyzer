@@ -13,6 +13,7 @@ public class MysqlEmailRepository implements EmailRepository {
 
     }
 
+    //todo : implement singleton class
     private Connection createConnection() throws Exception {
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -77,5 +78,6 @@ public class MysqlEmailRepository implements EmailRepository {
     }
 
     public void updateEmail(Email email) {
+        //todo : implement updateEmail function
     }
 }

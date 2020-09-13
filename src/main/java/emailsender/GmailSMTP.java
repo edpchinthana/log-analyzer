@@ -23,6 +23,8 @@ public class GmailSMTP implements EmailSender {
     final String host = "smtp.gmail.com";
     final Properties properties = System.getProperties();
 
+
+    //todo : implement error handling functions
     public GmailSMTP() {
         this.properties.put("mail.smtp.host", "smtp.gmail.com");
         this.properties.put("mail.smtp.port", "465");
@@ -33,14 +35,14 @@ public class GmailSMTP implements EmailSender {
     public void sendEmails(List<Email> emailList, List<String> errorList) {
         Session session = Session.getInstance(this.properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("javaloganalyzer@gmail.com", "loganalyzer2020");
+                return new PasswordAuthentication(from, password);
             }
         });
 
         try {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress("javaloganalyzer@gmail.com"));
-            message.setSubject("Log Analyzer Report ");
+            message.setSubject("Log Analyzer Report");
             Multipart multipart = new MimeMultipart();
             MimeBodyPart textPart = new MimeBodyPart();
             String body = "Error\n";
@@ -59,8 +61,8 @@ public class GmailSMTP implements EmailSender {
             }
 
             System.out.println("Sent message successfully....");
-        } catch (MessagingException var10) {
-            var10.printStackTrace();
+        } catch (MessagingException e) {
+            e.printStackTrace();
         }
 
     }
