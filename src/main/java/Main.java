@@ -1,3 +1,4 @@
+import entity.LogLine;
 import logRepository.LogRepository;
 
 import java.io.IOException;
@@ -35,15 +36,16 @@ public class Main {
 
         LogRepository logRepository=new LogRepository();
 
-        ArrayList<String> errorTimeStampList=logRepository.getErrorTimeList(logPath, "2020-09-13T31:08:54Z");
+        ArrayList<LogLine> errorTimeStampList=logRepository.getErrorTimeList(logPath, "2020-09-13T31:08:54Z");
 
 
-        //~~~~~~~~~~~~~~~~~~Pass error TimeListStamp~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        long now=System.currentTimeMillis();   // /////////////////////////////////////////////////////////////
-        for (String s : errorTimeStampList) { System.out.println(s); } // /////////////////////////////////////
+        //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        for (LogLine s : errorTimeStampList) {
+            System.out.println(s.getTimeStamp());   ///Example
+            System.out.println(s.getMessage());    ///Example
+        } // /////////////////////////////////////
 
     }
-
 
 
 }

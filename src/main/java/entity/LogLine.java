@@ -1,13 +1,19 @@
 package entity;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by Padma Gnanapiya (SE/2017/014)
  */
 
 
 public class LogLine {
-    private String timeStamp;
+
     private String message;
+    String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z";
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+    String timeStamp = simpleDateFormat.format(new Date());
 
     public LogLine() {
     }

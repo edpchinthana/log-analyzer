@@ -1,5 +1,7 @@
 package logRepository;
 
+import entity.LogLine;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -15,11 +17,11 @@ import java.util.stream.Stream;
 public class LogRepository {
     boolean isReadFromBegin=false;
     String lastTimeStamp;
-    ArrayList<String> errorTimeList=new ArrayList<>();
+    ArrayList<LogLine> errorTimeList=new ArrayList<>();
     int count =0;
     final String type="ERROR";
 
-    public ArrayList<String> getErrorTimeList(String path, String lastTimeStamp) throws IOException {
+    public ArrayList<LogLine> getErrorTimeList(String path, String lastTimeStamp) throws IOException {
         this.lastTimeStamp=lastTimeStamp;
         if(lastTimeStamp==null){
             isReadFromBegin=true;
@@ -34,8 +36,8 @@ public class LogRepository {
     private void process(String line) {
         count++;
         if(isReadFromBegin && line.indexOf(type)!=-1){
-            errorTimeList.add(line.split(type)[0]);
-            System.out.println(count);
+            LogLine logLine=new LogLine(line.split(type)[0],line.split(type)[1]);
+            errorTimeList.add(logLine);
         }
         else if(line.contains(lastTimeStamp)){
             isReadFromBegin=true;
