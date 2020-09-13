@@ -4,6 +4,7 @@ public interface Input {
 
     String readFilePath();
     String readName();
+    String readEmail();
 
 }
 

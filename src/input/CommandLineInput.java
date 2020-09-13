@@ -21,6 +21,12 @@ public class CommandLineInput implements Input{
 
     }
 
+    public String readEmail(){
+        String email=scanner.nextLine();
+        return email;
+
+    }
+
 
 
 
