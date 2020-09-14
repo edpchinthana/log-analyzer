@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
@@ -28,13 +29,19 @@ public class LogRepositoryImpl implements LogRepository{
             isReadFromBegin=true;
         }
         try (Stream<String> lines = Files.lines(Paths.get(path), Charset.defaultCharset())) {
-            lines.forEachOrdered(line -> process(line));
+            lines.forEachOrdered(line -> {
+                try {
+                    process(line);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+            });
 
         }
         return errorTimeList;
     }
 
-    private void process(String line) {
+    private void process(String line) throws ParseException {
         count++;
         if(isReadFromBegin && line.indexOf(type)!=-1){
             LogLine logLine=new LogLine(line.split(type)[0],line.split(type)[1]);

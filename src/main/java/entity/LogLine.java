@@ -1,5 +1,6 @@
 package entity;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -9,24 +10,30 @@ import java.util.Date;
 
 
 public class LogLine {
-
     private String message;
-    String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z";
-    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-    String timeStamp = simpleDateFormat.format(new Date());
+    private Date timeStampDate;
 
+
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+//    SimpleDateFormat output = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+
+    //Constructor
     public LogLine() {
     }
 
-    public LogLine(String timeStamp, String message) {
-        this.timeStamp = timeStamp;
+    //Constructor
+    public LogLine(String timeStamp, String message) throws ParseException {
+        this.timeStampDate = sdf.parse(timeStamp);
         this.message = message;
     }
 
-    public String getTimeStamp() {
-        return timeStamp;
+    //return Timestamp
+    public Date getTimeStamp() {
+        return timeStampDate;
     }
 
+    //return error details
     public String getMessage() {
         return message;
     }

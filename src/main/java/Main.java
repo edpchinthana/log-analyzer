@@ -1,8 +1,9 @@
 import entity.LogLine;
-import logRepository.LogRepository;
+import logRepository.LogRepositoryImpl;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by Padma Gnanapiya (SE/2017/014)
@@ -28,15 +29,19 @@ public class Main {
         //Ask to analyse the log file
 
 
+
 //    String logPath = "src\\main\\java\\test.log";
 
     public static void main(String[] args) throws IOException {
-        String logPath="H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\sampleLogFile2.log";
+        String logPath="H:\\A_Padma_Codes\\Code_Java\\log-analyzer\\src\\test.log";
         String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
 
-        LogRepository logRepository=new LogRepository();
+        LogRepositoryImpl logRepositoryImpl =new LogRepositoryImpl();
+//
+        String lastStampDate=null;
+        lastStampDate="2020-09-08T11:27:31Z";
 
-        ArrayList<LogLine> errorTimeStampList=logRepository.getErrorTimeList(logPath, "2020-09-13T31:08:54Z");
+        ArrayList<LogLine> errorTimeStampList= logRepositoryImpl.getErrorTimeList(logPath, lastStampDate);
 
 
         //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
