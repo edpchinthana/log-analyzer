@@ -18,25 +18,21 @@ import java.util.stream.Stream;
 public class GetLastTimeStamp implements ConfigurationsRepository{
     String timeStamp=null;
     @Override
-    public String actionPerform(String  logLath) {
+    public String actionPerform(String  logPath) {
         Path path = Paths.get(recordPath);
         try {
-
             List contents = Files.readAllLines(path);
 
             //Read from the stream
             for (Object content : contents) {//for each line of content in contents
-                if(content.toString().startsWith(logLath)) {
-                    System.out.println(content);// print the line
+                if(content.toString().startsWith(logPath)) {
+                    return content.toString().split(" ")[2];
                 }
-
-
             }
-
         } catch (IOException ex) {
             ex.printStackTrace();//handle exception here
         }
-        return recordPath;
+        return null;
 
     }
 }
