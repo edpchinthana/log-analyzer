@@ -1,9 +1,10 @@
 import entity.LogLine;
+import logRepository.NewLastTimeStamp;
+import logRepository.LogRepository;
 import logRepository.LogRepositoryImpl;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * Created by Padma Gnanapiya (SE/2017/014)
@@ -33,15 +34,20 @@ public class Main {
 //    String logPath = "src\\main\\java\\test.log";
 
     public static void main(String[] args) throws IOException {
+
+
+        LogRepository logRepositoryImpl =new LogRepositoryImpl();
+        NewLastTimeStamp newlastTimeStamp = new NewLastTimeStamp();
+
+
         String logPath="H:\\A_Padma_Codes\\Code_Java\\log-analyzer\\src\\test.log";
         String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
+        String previousLastTimeStamp=null;
+        String newLastTimeStamp=null;
+        previousLastTimeStamp="2020-09-08T11:27:31Z"; //Take from configuration
+        newLastTimeStamp=newlastTimeStamp.getLastTimeStamp(logPath);  //To overWrite configuration
 
-        LogRepositoryImpl logRepositoryImpl =new LogRepositoryImpl();
-//
-        String lastStampDate=null;
-        lastStampDate="2020-09-08T11:27:31Z";
-
-        ArrayList<LogLine> errorTimeStampList= logRepositoryImpl.getErrorTimeList(logPath, lastStampDate);
+        ArrayList<LogLine> errorTimeStampList= logRepositoryImpl.getErrorTimeList(logPath, previousLastTimeStamp);  //To email
 
 
         //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,6 +55,7 @@ public class Main {
             System.out.println(s.getTimeStamp());   ///Example
             System.out.println(s.getMessage());    ///Example
         } // /////////////////////////////////////
+        System.out.println(newLastTimeStamp);
 
     }
 

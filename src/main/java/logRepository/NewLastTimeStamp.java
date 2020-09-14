@@ -11,14 +11,14 @@ import java.io.IOException;
  */
 
 
-public class LastTimeStamp {
+public class NewLastTimeStamp {
     public String getLastTimeStamp(String logPath) throws IOException {
         LineIterator lineIterator = FileUtils.lineIterator(new File(logPath),"UTF-8");
         String lastLine="";
         while (lineIterator.hasNext()){
             lastLine=  lineIterator.nextLine();
         }
-        return lastLine;
+        return lastLine.split(" ")[0];
     }
 
 }
