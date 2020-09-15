@@ -11,8 +11,12 @@ public class CommandLineInput implements Input{
     }
 
     public String readFilePath(){
-            String path=scanner.nextLine();
-            return path;
+            try {
+                String path = scanner.nextLine();
+                return path;
+            } catch (InputMismatchException ex1) {
+                throw ex1;
+            }
     }
 
 
@@ -20,30 +24,28 @@ public class CommandLineInput implements Input{
             try {
                 String name = scanner.nextLine();
                 return name;
-            }catch(InputMismatchException ex1){
-                    System.out.println("You cannot enter integers");
+            }catch(InputMismatchException ex2){
+                    throw ex2;
                 }
-            return null;
     }
 
     public String readEmail(){
         try {
             String email = scanner.nextLine();
             return email;
-        }catch(InputMismatchException ex2){
-            System.out.println("Enter the valid Email");
+        }catch(InputMismatchException ex3){
+            throw ex3;
         }
-        return null;
     }
 
     public int readMenuItem(int number){
         try {
-            if(number>0 && number<5) {
-                int item = scanner.nextInt();
+            int item = scanner.nextInt();
+            if(item >0 && item<number) {
                 return item;
             }
-        }catch(InputMismatchException ex3){
-            System.out.println("Enter the valid number");
+        }catch(InputMismatchException ex4){
+            throw ex4;
         }
         return 0;
     }
