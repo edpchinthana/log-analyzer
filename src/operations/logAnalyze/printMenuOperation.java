@@ -1,5 +1,7 @@
 package operations.logAnalyze;
 
+import output.HelpMenu;
+
 public class printMenuOperation {
 
     public void printMenu(){
