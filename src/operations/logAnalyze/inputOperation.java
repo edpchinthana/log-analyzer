@@ -2,11 +2,13 @@ package operations.logAnalyze;
 
 import operations.exit.userExit;
 
-public class inputOparation {
+public class inputOperation {
+
     public static void checkInput(){
-        maleeshainputclass item=new maleeshainputclass();
-        item.readMenuItem();
-        int fact= item;
+
+        //call to get user input
+        CommandLineInput item=new CommandLineInput();
+        int fact= item.readMenuItem();
 
         switch (fact){
             case 1://get file path and pass to padma
