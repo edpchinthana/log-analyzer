@@ -1,5 +1,6 @@
 package input;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CommandLineInput implements Input{
@@ -16,21 +17,35 @@ public class CommandLineInput implements Input{
 
 
     public String readName(){
-        String name=scanner.nextLine();
-        return name;
-
+            try {
+                String name = scanner.nextLine();
+                return name;
+            }catch(InputMismatchException ex1){
+                    System.out.println("You cannot enter integers");
+                }
+            return null;
     }
 
     public String readEmail(){
-        String email=scanner.nextLine();
-        return email;
-
+        try {
+            String email = scanner.nextLine();
+            return email;
+        }catch(InputMismatchException ex2){
+            System.out.println("Enter the valid Email");
+        }
+        return null;
     }
 
-    public int readMenuItem(int max, int min){
-        int item=scanner.nextInt();
-        return item;
-
+    public int readMenuItem(int number){
+        try {
+            if(number>0 && number<5) {
+                int item = scanner.nextInt();
+                return item;
+            }
+        }catch(InputMismatchException ex3){
+            System.out.println("Enter the valid number");
+        }
+        return 0;
     }
 
 
