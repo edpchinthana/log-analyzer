@@ -3,6 +3,9 @@ package operations.logAnalyze;
 import operations.exit.userExit;
 import input.#;
 
+import java.awt.*;
+import java.util.List;#;
+
 public class inputOperation {
 
     public static void checkInput(){
@@ -15,17 +18,37 @@ public class inputOperation {
             case 1:
                 askpathoutput path= new askpathoutput();    //get file path and pass
                 path.methodname();
-                //get list & pass to email
+                //get list
                 getlistoferror errormsg=new gerlistoferror();
+                errormsg.method-name();
+                //pass error list
 
                 break;
             case 2:
+                //get summary details  from log repo error,info,warn
+             //   List<Integer> numbers=numberRepository.read();
+
                 //displaysummary
+
+                calldisplaysummaryclass summary=new calldisplaysummaryclass();
+
+                summary.methodisplaysum( error,info, warns);
                 break;
             case 3:
                 //call email menu from output package
                 askemailmenu emailmenu= new askmailmenu();
                 emailmenu.methodmeilmenu();
+                //get user input as a- b- c-
+                emailuserinputclass chose=new emailuserinputclass();
+                 String s=chose.methodn();
+                //choose one option
+                if(s.equals("a")){
+
+                }else if(s.equals("b")){
+
+                }else{
+
+                }
                 break;
             default:
                 //exit from the application call user exit
