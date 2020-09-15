@@ -1,10 +1,8 @@
 package output;
 
-import java.util.Scanner;
+public class FilePath implements Output {
 
-public class FilePath {
-
-    public void askFilePath() {
+    public void print() {
 
         System.out.println("Enter file path : ");
 

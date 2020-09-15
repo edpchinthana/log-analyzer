@@ -1,10 +1,8 @@
 package output;
 
-import java.util.Scanner;
+public class HelpMenu implements Output {
 
-public class HelpMenu {
-
-    public void printHelpMenu() {
+    public void print() {
 
         System.out.println("------------------------------ Help Menu ------------------------------");
         System.out.println("        1. Analyze Log");

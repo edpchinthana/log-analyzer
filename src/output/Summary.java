@@ -1,10 +1,8 @@
 package output;
 
-import java.util.Scanner;
+public class Summary implements Output {
 
-public class Summary {
-
-    public void printSummary() {
+    public void print() {
 
         System.out.println("---------- Log Summary ----------");
         System.out.println("    ERROR -> "); //ERROR count
