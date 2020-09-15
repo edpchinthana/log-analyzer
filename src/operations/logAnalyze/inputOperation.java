@@ -1,6 +1,7 @@
 package operations.logAnalyze;
 
 import operations.exit.userExit;
+import input.#;
 
 public class inputOperation {
 
@@ -11,10 +12,12 @@ public class inputOperation {
         int fact= item.readMenuItem();
 
         switch (fact){
-            case 1://get file path and pass to padma
-                //get list & pass pasi to email
-                askpathoutput path= new askpathoutput();
+            case 1:
+                askpathoutput path= new askpathoutput();    //get file path and pass
                 path.methodname();
+                //get list & pass to email
+                getlistoferror errormsg=new gerlistoferror();
+
                 break;
             case 2:
                 //displaysummary
