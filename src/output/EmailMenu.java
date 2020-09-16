@@ -5,9 +5,11 @@ public class EmailMenu implements Output {
     public void print() {
 
         System.out.println("---------- Emails ----------");
-        System.out.println("a. View emails");
-        System.out.println("b. Add emails");
-        System.out.println("c. Delete emails");
+        System.out.println("1. View emails");
+        System.out.println("2. Add emails");
+        System.out.println("3. Delete emails");
+
+        System.out.println("Which option do you want to proceed?");
 
     }
 
