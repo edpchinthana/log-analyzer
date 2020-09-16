@@ -1,5 +1,6 @@
 package operations.logAnalyze;
 
+import operations.EmailManage.operationRepository;
 import operations.exit.userExit;
 import output.Filepath;
 import output.Summary;
@@ -43,15 +44,16 @@ public class inputOperation {
             case 3:
 
                 //call email menu from output package
-                EmailMenu emailmenu= new EmailMenu();
-                emailmenu.print();
+                operationRepository emailmenu= new operationRepository();
+                emailmenu.divideSections();
 
                 //get user input as 1,2,3
+                /*
                 emailuserinputclass chose=new emailuserinputclass();
                  String s=chose.methodn();
                  return s;
 
-                 /*
+
                 //choose one option
                 if(s.equals("a")){
                     addEmailOperation addemail=new addEmailOperation();

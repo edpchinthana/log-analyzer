@@ -5,18 +5,23 @@ import operations.logAnalyze.printMenuOperation;
 
 public class MainOperation {
     public static void main(String []args) {
-        //log Analyzer part
-        //call to print menu operation
-        printMenuOperation menu=new printMenuOperation();
-        menu.printMenu();
 
-        //switch in input
-        inputOperation input=new inputOperation();
-        input.checkInput();
+        while() {
+            //log Analyzer part
 
-        //Email manage part
+            //call to print menu operation
+            printMenuOperation menu = new printMenuOperation();
+            menu.printMenu();
 
-        //call to exit
+            //switch in input
+            inputOperation input = new inputOperation();
+            input.checkInput();
 
+            //email
+
+            //Email manage part
+
+            //call to exit
+        }
     }
 }
