@@ -1,7 +1,11 @@
 package operations.logAnalyze;
 
 import operations.exit.userExit;
-#;#;
+import output.Filepath;
+import output.Summary;
+import output.EmailMenu;
+
+
 
 public class inputOperation {
 
@@ -16,29 +20,33 @@ public class inputOperation {
 
             case 1:
                 //get file path and pass
-                askpathoutput path= new askpathoutput();
-                path.methodname();
-                //get list
+                FilePath path= new FilePath();
+                path.print();
+                //get list from package log repo
                 getlistoferror errormsg=new gerlistoferror();
                 errormsg.method-name();
-                //pass error list
+                //pass error list emialrepo
                 break;
 
             case 2:
 
                 //get summary details  from log repo error,info,warn
-             //   List<Integer> numbers=numberRepository.read();
+               // summaryclass logsum = new summaryclass();
+             //logsum.summarymethod();
+
+
                 //displaysummary
-                calldisplaysummaryclass summary=new calldisplaysummaryclass();
-                summary.methodisplaysum( error,info, warns);
+                Summary summary=new Summary();
+                summary.print();    //pass parameter
                 break;
 
             case 3:
 
                 //call email menu from output package
-                askemailmenu emailmenu= new askmailmenu();
-                emailmenu.methodmeilmenu();
-                //get user input as a- b- c-
+                EmailMenu emailmenu= new EmailMenu();
+                emailmenu.print();
+
+                //get user input as 1,2,3
                 emailuserinputclass chose=new emailuserinputclass();
                  String s=chose.methodn();
                  return s;
