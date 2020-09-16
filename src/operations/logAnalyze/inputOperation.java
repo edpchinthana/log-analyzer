@@ -1,5 +1,8 @@
 package operations.logAnalyze;
 
+import operations.EmailManage.addEmailOperation;
+import operations.EmailManage.deletEmailOperation;
+import operations.EmailManage.getEmailOperation;
 import operations.exit.userExit;
 import input.#;
 
@@ -43,16 +46,20 @@ public class inputOperation {
                  String s=chose.methodn();
                 //choose one option
                 if(s.equals("a")){
-
+                    addEmailOperation addemail=new addEmailOperation();
+                    addemail.add();
                 }else if(s.equals("b")){
-
+                    deletEmailOperation deletemail=new deletEmailOperation();
+                    deletemail.delete();
                 }else{
-
+                    getEmailOperation getEmail=new getEmailOperation();
+                    getEmail.get();
                 }
                 break;
             default:
+                //save current timestamp in the text file-overwrite
                 //exit from the application call user exit
-                userExit obj=new userexit();
+                userExit obj=new userExit();
                 obj.appExit();
                 break;
         }
