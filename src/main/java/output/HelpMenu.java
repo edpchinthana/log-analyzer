@@ -4,6 +4,8 @@ public class HelpMenu implements Output {
 
     public void print() {
 
+        final int menuNumber = 4;
+
         System.out.println("------------------------------ Help Menu ------------------------------");
         System.out.println("        1. Analyze Log");
         System.out.println("        2. Display Summary");
@@ -13,6 +15,5 @@ public class HelpMenu implements Output {
         System.out.println("Which option do you want to proceed?");
 
     }
-
 
 }

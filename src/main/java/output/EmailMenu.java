@@ -4,6 +4,8 @@ public class EmailMenu implements Output {
 
     public void print() {
 
+        final int menuNumber = 3;
+
         System.out.println("---------- Emails ----------");
         System.out.println("1. View emails");
         System.out.println("2. Add emails");
