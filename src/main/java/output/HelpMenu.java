@@ -2,7 +2,7 @@ package output;
 
 public class HelpMenu implements Output {
 
-    public void print() {
+    public void print(String... prms) {
 
         final int menuNumber = 4;
 

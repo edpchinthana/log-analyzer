@@ -2,7 +2,7 @@ package output;
 
 public class EmailMenu implements Output {
 
-    public void print() {
+    public void print(String... prms) {
 
         final int menuNumber = 3;
 
