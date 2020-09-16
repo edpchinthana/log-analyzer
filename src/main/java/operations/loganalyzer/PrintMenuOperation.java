@@ -1,8 +1,8 @@
-package operations.logAnalyze;
+package operations.loganalyzer;
 
 import output.HelpMenu;
 
-public class printMenuOperation {
+public class PrintMenuOperation {
 
     public void printMenu(){
 

@@ -1,14 +1,14 @@
-package operations.logAnalyze;
+package operations.loganalyzer;
 
-import operations.EmailManage.operationRepository;
-import operations.exit.userExit;
+import operations.email.operationRepository;
+import operations.exit.UserExit;
 import output.Filepath;
 import output.Summary;
 import output.EmailMenu;
 
 
 
-public class inputOperation {
+public class InputOperation {
 
     public String checkInput(){
 
@@ -70,7 +70,7 @@ public class inputOperation {
             default:
                 //save current timestamp in the text file-overwrite
                 //exit from the application call user exit
-                userExit obj=new userExit();
+                UserExit obj=new UserExit();
                 obj.appExit();
                 break;
         }

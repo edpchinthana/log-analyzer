@@ -1,7 +1,7 @@
 package operations;
 
-import operations.logAnalyze.inputOperation;
-import operations.logAnalyze.printMenuOperation;
+import operations.loganalyzer.InputOperation;
+import operations.loganalyzer.PrintMenuOperation;
 
 public class MainOperation {
     public static void main(String []args) {
@@ -10,11 +10,11 @@ public class MainOperation {
             //log Analyzer part
 
             //call to print menu operation
-            printMenuOperation menu = new printMenuOperation();
+            PrintMenuOperation menu = new PrintMenuOperation();
             menu.printMenu();
 
             //switch in input
-            inputOperation input = new inputOperation();
+            InputOperation input = new InputOperation();
             input.checkInput();
 
             //email
