@@ -1,8 +1,5 @@
 import entity.LogLine;
-import logRepository.LogAnalyzer;
-import logRepository.NewLastTimeStamp;
-import logRepository.LogRepository;
-import logRepository.LogRepositoryImpl;
+import logRepository.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -38,22 +35,21 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
 
-        LogRepository logRepositoryImpl =new LogRepositoryImpl();
+        LogRepositoryImpl logRepositoryImpl = new LogRepositoryImpl();
         NewLastTimeStamp newlastTimeStamp = new NewLastTimeStamp();
-        LogAnalyzer logAnalyzer=new LogAnalyzer();
+        LogAnalyzer logAnalyzer = new LogAnalyzer();
+        LogReporter logReporter = new LogReporter();
 
 
-        String logPath="H:\\A_Padma_Codes\\Code_Java\\log-analyzer\\src\\test.log";
-        String timeStampsRecodePath="src\\main\\java\\timeStampsRecord.txt";
-        String previousLastTimeStamp=null;
-        String newLastTimeStamp=null;
-        previousLastTimeStamp="2020-09-08T11:27:31Z"; //Take from configuration
-        newLastTimeStamp=newlastTimeStamp.getLastTimeStamp(logPath);  //To overWrite configuration
+        String logPath = "H:\\A_Padma_Codes\\Code_Java\\log-analyzer\\src\\test.log";
+        String timeStampsRecodePath = "src\\main\\java\\timeStampsRecord.txt";
+        String previousLastTimeStamp = null;
+        String newLastTimeStamp = null;
+        previousLastTimeStamp = "2020-09-08T11:27:31Z"; //Take from configuration
+        newLastTimeStamp = newlastTimeStamp.getLastTimeStamp(logPath);  //To overWrite configuration
 
 //        List<LogLine> errorTimeStampList= logAnalyzer.getErrorTimeList(logPath, previousLastTimeStamp);  //To email
-        List<LogLine> errorTimeStampList= logAnalyzer.getErrorTimeList();  //To email
-
-
+        List<LogLine> errorTimeStampList = logAnalyzer.getErrorTimeList();  //To email
 
 
         //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +59,21 @@ public class Main {
         } // /////////////////////////////////////
         System.out.println(newLastTimeStamp);
 
-    }
 
+        LogRepositoryImpl logRepository = new LogRepositoryImpl();
+
+
+        System.out.println("________________________________________");
+        logRepositoryImpl.readLogFile(logPath, "2020-09-08T11:48:23Z");
+        logAnalyzer.getErrorTimeList();
+        System.out.println("))))))))))))");
+        for (LogLine logLine : errorTimeStampList) {
+            System.out.println("______" + logLine.getTimeStamp() + "-------" + logLine.getMessage());
+//        }
+            System.out.println(logReporter.getAnalyticalDetails().getErrorCount() + "======" + logReporter.getAnalyticalDetails().getWarnCount() + "---" + logReporter.getAnalyticalDetails().getInfoCount());
+            System.out.println();
+
+        }
+    }
 
 }

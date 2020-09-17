@@ -25,6 +25,7 @@ public class LogRepositoryImpl implements LogRepository{
     public void readLogFile(String path, String lastTimeStamp) throws IOException {
         this.lastTimeStamp=lastTimeStamp;
         LogAnalyzer logAnalyzer=new LogAnalyzer();
+        LogReporter logReporter=new LogReporter();
         if(lastTimeStamp==null){
             isReadFromBegin=true;
         }
@@ -32,6 +33,8 @@ public class LogRepositoryImpl implements LogRepository{
             lines.forEachOrdered(line -> {
                 try {
                     logAnalyzer.analyzeReport(line,isReadFromBegin,lastTimeStamp);
+                    logReporter.makeSummary(line,isReadFromBegin,lastTimeStamp);
+
 //                    process(line);
                 } catch (ParseException e) {
                     e.printStackTrace();

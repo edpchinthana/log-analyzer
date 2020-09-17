@@ -20,6 +20,7 @@ public class LogAnalyzer {
         this.isReadFromBegin=isReadFromBegin;
         if(isReadFromBegin && line.indexOf(type)!=-1){
             LogLine logLine=new LogLine(line.split(type)[0],line.split(type)[1]);
+            System.out.println(logLine);
             errorTimeList.add(logLine);
         }
         else if(line.contains(lastTimeStamp)){
@@ -28,6 +29,7 @@ public class LogAnalyzer {
     }
 
     public List<LogLine> getErrorTimeList(){
+        System.out.println("ErroTimeList");
         return errorTimeList;
     }
 }
