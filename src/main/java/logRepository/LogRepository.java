@@ -11,5 +11,5 @@ import java.util.ArrayList;
 
 
 public interface LogRepository {
-    ArrayList<LogLine> getErrorTimeList(String path, String lastTimeStamp) throws IOException;
+//    ArrayList<LogLine> getErrorTimeList(String path, String lastTimeStamp) throws IOException;
 }

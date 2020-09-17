@@ -18,38 +18,29 @@ import java.util.stream.Stream;
 public class LogRepositoryImpl implements LogRepository{
     boolean isReadFromBegin=false;
     String lastTimeStamp;
-    ArrayList<LogLine> errorTimeList=new ArrayList<>();
-    int count =0;
-    final String type="ERROR";
+//    int count =0;
+//    final String type="ERROR";
 
-    @Override
-    public ArrayList<LogLine> getErrorTimeList(String path, String lastTimeStamp) throws IOException {
+//    @Override
+    public void readLogFile(String path, String lastTimeStamp) throws IOException {
         this.lastTimeStamp=lastTimeStamp;
+        LogAnalyzer logAnalyzer=new LogAnalyzer();
         if(lastTimeStamp==null){
             isReadFromBegin=true;
         }
         try (Stream<String> lines = Files.lines(Paths.get(path), Charset.defaultCharset())) {
             lines.forEachOrdered(line -> {
                 try {
-                    process(line);
+                    logAnalyzer.analyzeReport(line,isReadFromBegin,lastTimeStamp);
+//                    process(line);
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
             });
 
         }
-        return errorTimeList;
-    }
-
-    private void process(String line) throws ParseException {
-        count++;
-        if(isReadFromBegin && line.indexOf(type)!=-1){
-            LogLine logLine=new LogLine(line.split(type)[0],line.split(type)[1]);
-            errorTimeList.add(logLine);
-        }
-        else if(line.contains(lastTimeStamp)){
-            isReadFromBegin=true;
-        }
-
+//        return errorTimeList;
+//    }
+//
     }
 }

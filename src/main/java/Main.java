@@ -1,10 +1,12 @@
 import entity.LogLine;
+import logRepository.LogAnalyzer;
 import logRepository.NewLastTimeStamp;
 import logRepository.LogRepository;
 import logRepository.LogRepositoryImpl;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Padma Gnanapiya (SE/2017/014)
@@ -38,6 +40,7 @@ public class Main {
 
         LogRepository logRepositoryImpl =new LogRepositoryImpl();
         NewLastTimeStamp newlastTimeStamp = new NewLastTimeStamp();
+        LogAnalyzer logAnalyzer=new LogAnalyzer();
 
 
         String logPath="H:\\A_Padma_Codes\\Code_Java\\log-analyzer\\src\\test.log";
@@ -47,7 +50,10 @@ public class Main {
         previousLastTimeStamp="2020-09-08T11:27:31Z"; //Take from configuration
         newLastTimeStamp=newlastTimeStamp.getLastTimeStamp(logPath);  //To overWrite configuration
 
-        ArrayList<LogLine> errorTimeStampList= logRepositoryImpl.getErrorTimeList(logPath, previousLastTimeStamp);  //To email
+//        List<LogLine> errorTimeStampList= logAnalyzer.getErrorTimeList(logPath, previousLastTimeStamp);  //To email
+        List<LogLine> errorTimeStampList= logAnalyzer.getErrorTimeList();  //To email
+
+
 
 
         //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
