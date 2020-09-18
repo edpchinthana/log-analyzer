@@ -15,7 +15,6 @@ public class LogReporter {
     final String error="ERROR";
     final String warn="WARN";
     final String info="INFO";
-    //    boolean isReadFromBegin=false;
     long errorCount=0l;
     long warnCount=0l;
     long infoCount=0l;

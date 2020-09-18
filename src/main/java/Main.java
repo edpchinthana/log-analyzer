@@ -31,9 +31,6 @@ public class Main {
         //Ask to analyse the log file
 
 
-
-//    String logPath = "src\\main\\java\\test.log";
-
     public static void main(String[] args) throws IOException, ParseException {
 
 
@@ -41,47 +38,40 @@ public class Main {
         NewLastTimeStamp newlastTimeStamp = new NewLastTimeStamp();
         LogAnalyzer logAnalyzer = new LogAnalyzer();
         LogReporter logReporter = new LogReporter();
-
-
-        String logPath = "H:\\A_Padma_Codes\\Code_Java\\log-analyzer\\src\\test.log";
-        String timeStampsRecodePath = "src\\main\\java\\timeStampsRecord.txt";
+        List<String> updatedLogLineList= new ArrayList();  //Don't delete
         String previousLastTimeStamp = null;
         String newLastTimeStamp = null;
-        previousLastTimeStamp = "2020-09-08T11:27:31Z"; //Take from configuration
+
+
+        String logPath = "H:\\A_Padma_Codes\\Code_Java\\SampleLogGenarator\\src\\lk\\ac\\uok\\setu\\SampleLogFile2.log";
+
+        String timeStampsRecodePath = "src\\main\\java\\timeStampsRecord.txt";
+
+        previousLastTimeStamp = "2018-02-03T13:19:54:54Z"; //Take from configuration, this is dummy value for run my part
         newLastTimeStamp = newlastTimeStamp.getLastTimeStamp(logPath);  //To overWrite configuration
+        updatedLogLineList=logRepositoryImpl.readLogFile(logPath,previousLastTimeStamp); //Read log file from previous LastTimeStamp and return lines as list
+        List<LogLine> errorList= logAnalyzer.analyzeReport(updatedLogLineList); //Pass errorList to email method
 
-//        List<LogLine> errorTimeStampList= logAnalyzer.getErrorTimeList(logPath, previousLastTimeStamp);  //To email
-        List<LogLine> errorTimeStampList = logRepositoryImpl.getErrorTimeList();  //To email
 
 
-        //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        for (LogLine s : errorTimeStampList) {
-            System.out.println(s.getTimeStamp());   ///Example
-            System.out.println(s.getMessage());    ///Example
-        } // /////////////////////////////////////
-        System.out.println(newLastTimeStamp);
+        //Example for arrayList of error found which we sent to email
+        System.out.println("\n  ~~~~ New error with error message (Email body) ~~~~");  ////////
+        for (LogLine logLine : errorList) {                                           ////////
+            System.out.println(logLine.getTimeStamp()+" --"+logLine.getMessage());    ////////
+        }                                                                             ////////
+        AnalyticalDetail analyticalDetail=logReporter.makeSummary(updatedLogLineList);   //Take errorCount, warnCount, infoCount as an AnalyticalDetail Object
 
-        LogRepositoryImpl logRepository = new LogRepositoryImpl();
+        //For Output log summary details
+        System.out.println("\n   ~~~~~ Console summary output ~~~~~~");
+        System.out.println(" Error Count - "+analyticalDetail.getErrorCount());
+        System.out.println(" Warn Count  - " + analyticalDetail.getWarnCount());
+        System.out.println(" Info count  - " + analyticalDetail.getInfoCount());
+        System.out.println(" Count Of recently updated log Line - "+updatedLogLineList.size());
 
-        logRepositoryImpl.readLogFile(logPath, "2020-09-08T11:50:43Z");
+        System.out.println("\n   ~~~~~ Hidden data ~~~~~~");
+        System.out.println(" Previous Last TimeStamp - "+previousLastTimeStamp); //From Configuration to LogReader
+        System.out.println(" New Last TimeStamp      - "+newLastTimeStamp);
 
-        for (LogLine logLine : errorTimeStampList) {
-            System.out.println("-- " + logLine.getTimeStamp() + " -- " + logLine.getMessage());
-        }
-
-        List<String> err= new ArrayList();
-        err=logRepositoryImpl.readLogFile(logPath,previousLastTimeStamp);
-
-        List<LogLine> errorList= logAnalyzer.analyzeReport(err);
-        for (LogLine logLine : errorList) {
-            System.out.println(logLine.getMessage()+"----"+logLine.getTimeStamp());
-        }
-        AnalyticalDetail analyticalDetail=logReporter.makeSummary(err);
-        System.out.println("\nError Count- "+analyticalDetail.getErrorCount() + ",  Warn Count- " + analyticalDetail.getWarnCount() + ",  Info count- " + analyticalDetail.getInfoCount());
-
-        System.out.println(err.size());
-        logAnalyzer.analyzeReport(err);
-        System.out.println(logRepository.getAnalyticalDetails().getErrorCount());
     }
 
 }

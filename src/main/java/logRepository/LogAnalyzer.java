@@ -12,7 +12,6 @@ import java.util.List;
 
 public class LogAnalyzer {
     final String type="ERROR";
-    //    boolean isReadFromBegin=false;
     List<LogLine> errorTimeList=new ArrayList();
 
     public List<LogLine> analyzeReport(List<String> updatedArrayList) throws ParseException {

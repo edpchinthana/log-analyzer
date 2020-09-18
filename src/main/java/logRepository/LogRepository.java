@@ -4,6 +4,7 @@ import entity.LogLine;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Padma Gnanapiya (SE/2017/014)
@@ -11,5 +12,6 @@ import java.util.ArrayList;
 
 
 public interface LogRepository {
-//    ArrayList<LogLine> getErrorTimeList(String path, String lastTimeStamp) throws IOException;
+    List readLogFile(String path, String lastTimeStamp) throws IOException;
+
 }
