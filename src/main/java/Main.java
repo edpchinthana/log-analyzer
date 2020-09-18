@@ -49,7 +49,7 @@ public class Main {
         newLastTimeStamp = newlastTimeStamp.getLastTimeStamp(logPath);  //To overWrite configuration
 
 //        List<LogLine> errorTimeStampList= logAnalyzer.getErrorTimeList(logPath, previousLastTimeStamp);  //To email
-        List<LogLine> errorTimeStampList = logAnalyzer.getErrorTimeList();  //To email
+        List<LogLine> errorTimeStampList = logRepositoryImpl.getErrorTimeList();  //To email
 
 
         //~~~~~~~~~~~~~~~~~~Give ArrayList of LogLine for message Sending part~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,21 +59,14 @@ public class Main {
         } // /////////////////////////////////////
         System.out.println(newLastTimeStamp);
 
-
         LogRepositoryImpl logRepository = new LogRepositoryImpl();
 
-
-        System.out.println("________________________________________");
-        logRepositoryImpl.readLogFile(logPath, "2020-09-08T11:48:23Z");
-        logAnalyzer.getErrorTimeList();
-        System.out.println("))))))))))))");
+        logRepositoryImpl.readLogFile(logPath, "2020-09-08T11:50:43Z");
         for (LogLine logLine : errorTimeStampList) {
-            System.out.println("______" + logLine.getTimeStamp() + "-------" + logLine.getMessage());
-//        }
-            System.out.println(logReporter.getAnalyticalDetails().getErrorCount() + "======" + logReporter.getAnalyticalDetails().getWarnCount() + "---" + logReporter.getAnalyticalDetails().getInfoCount());
-            System.out.println();
-
+            System.out.println("-- " + logLine.getTimeStamp() + " -- " + logLine.getMessage());
         }
+       System.out.println("\nError Count- "+logRepositoryImpl.getAnalyticalDetails().getErrorCount() + ",  Warn Count- " + logRepositoryImpl.getAnalyticalDetails().getWarnCount() + ",  Info count- " + logRepositoryImpl.getAnalyticalDetails().getInfoCount());
+
     }
 
 }

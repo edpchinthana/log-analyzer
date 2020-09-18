@@ -19,20 +19,6 @@ public class LogReporter {
     long warnCount=0l;
     long infoCount=0l;
 
-    public void makeSummary(String line, boolean isReadFromBegin, String lastTimeStamp) throws ParseException {
-        if (isReadFromBegin && line.indexOf(error) != -1) {
-            errorCount++;
-        } else if (isReadFromBegin && line.indexOf(warn) != -1) {
-            warnCount++;
-        } else if (isReadFromBegin && line.indexOf(info) != -1) {
-            infoCount++;
-        }else if(line.contains(lastTimeStamp)){
-            this.isReadFromBegin=true;
-        }
 
-    }
-    public AnalyticalDetail getAnalyticalDetails(){
-        return new AnalyticalDetail(errorCount,warnCount,infoCount);
-    }
 
 }
