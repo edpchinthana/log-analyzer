@@ -2,6 +2,7 @@ package input;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class CommandLineInput implements Input{
 
@@ -13,7 +14,14 @@ public class CommandLineInput implements Input{
     public String readFilePath(){
             try {
                 String path = scanner.nextLine();
-                return path;
+                String regularExpression = "([a-zA-Z]:)?(\\[a-zA-Z0-9_-]+)+\\?";
+                boolean isMatched = Pattern.matches(regularExpression,path);
+                if(isMatched){
+                    return path;
+                }else {
+                    throw new InputMismatchException();
+                }
+
             } catch (InputMismatchException ex1) {
                 throw ex1;
             }
