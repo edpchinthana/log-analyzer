@@ -1,7 +1,9 @@
+import entity.AnalyticalDetail;
 import entity.LogLine;
 import logRepository.*;
 
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +34,7 @@ public class Main {
 
 //    String logPath = "src\\main\\java\\test.log";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
 
 
         LogRepositoryImpl logRepositoryImpl = new LogRepositoryImpl();
@@ -62,11 +64,24 @@ public class Main {
         LogRepositoryImpl logRepository = new LogRepositoryImpl();
 
         logRepositoryImpl.readLogFile(logPath, "2020-09-08T11:50:43Z");
+
         for (LogLine logLine : errorTimeStampList) {
             System.out.println("-- " + logLine.getTimeStamp() + " -- " + logLine.getMessage());
         }
-       System.out.println("\nError Count- "+logRepositoryImpl.getAnalyticalDetails().getErrorCount() + ",  Warn Count- " + logRepositoryImpl.getAnalyticalDetails().getWarnCount() + ",  Info count- " + logRepositoryImpl.getAnalyticalDetails().getInfoCount());
 
+        List<String> err= new ArrayList();
+        err=logRepositoryImpl.readLogFile(logPath,previousLastTimeStamp);
+
+        List<LogLine> errorList= logAnalyzer.analyzeReport(err);
+        for (LogLine logLine : errorList) {
+            System.out.println(logLine.getMessage()+"----"+logLine.getTimeStamp());
+        }
+        AnalyticalDetail analyticalDetail=logReporter.makeSummary(err);
+        System.out.println("\nError Count- "+analyticalDetail.getErrorCount() + ",  Warn Count- " + analyticalDetail.getWarnCount() + ",  Info count- " + analyticalDetail.getInfoCount());
+
+        System.out.println(err.size());
+        logAnalyzer.analyzeReport(err);
+        System.out.println(logRepository.getAnalyticalDetails().getErrorCount());
     }
 
 }

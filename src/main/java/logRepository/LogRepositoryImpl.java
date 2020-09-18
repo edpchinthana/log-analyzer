@@ -22,7 +22,8 @@ public class LogRepositoryImpl implements LogRepository{
 //    final String type="ERROR";
 
 //    @Override
-    public void readLogFile(String path, String lastTimeStamp) throws IOException {
+    public List readLogFile(String path, String lastTimeStamp) throws IOException {
+        List<String> updatedLogLines=new ArrayList();
         this.lastTimeStamp=lastTimeStamp;
         LogAnalyzer logAnalyzer=new LogAnalyzer();
         LogReporter logReporter=new LogReporter();
@@ -32,15 +33,24 @@ public class LogRepositoryImpl implements LogRepository{
         try (Stream<String> lines = Files.lines(Paths.get(path), Charset.defaultCharset())) {
             lines.forEachOrdered(line -> {
                 try {
-                    analyzeReport(line,isReadFromBegin,lastTimeStamp);
-                    makeSummary(line,isReadFromBegin,lastTimeStamp);
+                    if(isReadFromBegin){
+                        updatedLogLines.add(line);
+//                        logAnalyzer.analyzeReport(line);
+//                        logReporter.makeSummary(line);
+//                        System.out.println("Read line");
+                    }
+                    else if(line.contains(lastTimeStamp)){
+                        this.isReadFromBegin=true;
+                    }
+//                    analyzeReport(line,isReadFromBegin,lastTimeStamp);
+//                    makeSummary(line,isReadFromBegin,lastTimeStamp);
 
 //                    process(line);
-                } catch (ParseException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             });
-
+            return updatedLogLines;
         }
 
     }
@@ -61,6 +71,7 @@ public class LogRepositoryImpl implements LogRepository{
     public List<LogLine> getErrorTimeList(){
         return errorTimeList;
     }
+
 
     final String error="ERROR";
     final String warn="WARN";
