@@ -10,5 +10,4 @@ public interface EmailRepository {
 
     void deleteEmail(int id);
 
-    void updateEmail(Email email);
 }
