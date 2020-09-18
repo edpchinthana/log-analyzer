@@ -1,8 +1,10 @@
-package output;
+package output.commandline;
 
-public class HelpMenu implements Output {
+import output.Output;
 
-    public void print(String... prms) {
+public class HelpMenu{
+
+    public void perform() {
 
         final int menuNumber = 4;
 
