@@ -5,6 +5,13 @@ public class LogReport {
     private int warnCount = 0;
     private int infoCount = 0;
 //todo add varoiables to store loglines
+
+    public LogReport(int errorCount, int warnCount, int infoCount) {
+        this.errorCount = errorCount;
+        this.warnCount = warnCount;
+        this.infoCount = infoCount;
+    }
+
     public int getErrorCount() {
         return errorCount;
     }

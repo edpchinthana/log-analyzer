@@ -9,10 +9,6 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Stream;
 
-/**
- * Created by Padma Gnanapiya (SE/2017/014)
- */
-
 public class LogRepositoryImpl implements LogRepository{
     String lastTimeStamp;
     private boolean isReadFromBegin;

@@ -1,24 +1,18 @@
 package logRepository;
 
-import entity.AnalyticalDetail;
-import entity.LogLine;
+import models.LogReport;
 
 import java.text.ParseException;
 import java.util.List;
-
-/**
- * Created by Padma Gnanapiya (SE/2017/014)
- */
-
 
 public class LogReporter {
     final String error="ERROR";
     final String warn="WARN";
     final String info="INFO";
-    long errorCount=0l;
-    long warnCount=0l;
-    long infoCount=0l;
-    public AnalyticalDetail makeSummary(List<String> updatedErrorList) throws ParseException {
+    int errorCount=0;
+    int warnCount=0;
+    int infoCount=0;
+    public LogReport makeSummary(List<String> updatedErrorList) throws ParseException {
         for (String line : updatedErrorList) {
             if (line.indexOf(error) != -1) {
                 errorCount++;
@@ -28,7 +22,7 @@ public class LogReporter {
                 infoCount++;
             }
         }
-        return new AnalyticalDetail(errorCount, warnCount, infoCount);
+        return new LogReport(errorCount, warnCount, infoCount);
 
     }
 
