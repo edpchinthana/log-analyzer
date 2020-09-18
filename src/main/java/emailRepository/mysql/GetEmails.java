@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetEmails extends ManageConnection{
+public class GetEmails extends DBConnection {
 
     public List<Email> perform() {
         ArrayList emailsList = new ArrayList();

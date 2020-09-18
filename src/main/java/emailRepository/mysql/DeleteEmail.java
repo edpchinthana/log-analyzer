@@ -3,7 +3,7 @@ package emailRepository.mysql;
 import java.sql.Connection;
 import java.sql.Statement;
 
-public class DeleteEmail extends ManageConnection {
+public class DeleteEmail extends DBConnection {
 
     public void perform(int id) {
         try {

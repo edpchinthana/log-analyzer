@@ -3,7 +3,7 @@ package emailRepository.mysql;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class ManageConnection {
+public class DBConnection {
 
     protected Connection createConnection() throws Exception {
         try {
