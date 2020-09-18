@@ -1,7 +1,5 @@
-H:\\A_Padma_Codes\\Code_Java\\log-43analyzer\\src\\test2.log | 2020-09-13T00:00:14Z INFO application started
-H:\\A_Padma_Codes\\Code_J34ava\\34log-analyzer\\src\\test1.log | 2020-09-13T00:00:41Z ERROR Server seems busy
-C:\\User\\Desktop\\Code_Jaanalyzer\\src\\myLog.log | 2020-09-13T00:00:52Z WARN INVOICE from Power EC Ltd
-H:\A_Padma_Codes\Code_Java\log-analyzer\src\test.log | 2020-09-13T00:01:03Z ERROR socket: Failed to get a socket, exiting child
-H:\\A_Padma_Codes\\Code_Java4\\log-analyzer\\src\\test-4.log | 2020-09-13T00:00:52Z WARN INVOICE from Power EC Ltd
-
-
+H:/A_Padma_Codes/3333333333
+H:/A_Padma_Codes/Code_Java/log-analyzer/src/testq.log | rrrrrrrrrrrrrrr
+23333333333333
+2333333333333333333
+H:/A_Padma_Codes/Code_Java/log-analyzer/src/test.log | qqqqqqqqqqqqqq

@@ -15,10 +15,11 @@ import java.util.stream.Stream;
  */
 
 
-public class GetLastTimeStamp implements ConfigurationsRepository{
+public class GetLastTimeStamp{
     String timeStamp=null;
-    @Override
-    public String actionPerform(String  logPath) {
+
+    //    @Override
+    public String actionPerform(String  logPath, String recordPath) {
         Path path = Paths.get(recordPath);
         try {
             List contents = Files.readAllLines(path);
