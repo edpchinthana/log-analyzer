@@ -1,4 +1,4 @@
-import configurationsRepository.GetLastTimeStamp;
+//import configurationsRepository.GetLastTimeStamp;
 import configurationsRepository.PreviousLastTimeStamp;
 import configurationsRepository.PreviousLastTimeStampImpl;
 import configurationsRepository.RecodeNewFileDetails;
@@ -18,9 +18,9 @@ public class Main {
         String previousLastTimeStamp=null;
 
         recordPath="src\\configurationsRepository\\TimeStampsRecord.txt";
-        logPath="H:/A_Padma_Codes/Code_Java/log-analyzer/src/test.log";
+        logPath="H:/A_Padma_Codes/Code_Java/log-analyzer/src/test4.log";
 
-        newLastTimeStamp="qqqqqqqqqqqqqq";
+        newLastTimeStamp="2020-02-23T07:20:17:09Z";
 
 
         //Ask previousLastTimeStamp. If this logFile is new this return "null". Other cases it returns previousLastTimeStamp from TimeStampRecord.
@@ -29,11 +29,11 @@ public class Main {
 
         if(previousLastTimeStamp==null){
             //After log analyse && if log is new
-            recodeNewFileDetails.actionPerform(logPath+ " | "+newLastTimeStamp, recordPath);
+            recodeNewFileDetails.actionPerform(logPath, previousLastTimeStamp, newLastTimeStamp, recordPath);
         }
         else{
             //After log analyse && if log is not new
-           updateFileTimeStamp.actionPerform(logPath+" | "+previousLastTimeStamp,logPath+" | "+newLastTimeStamp, recordPath);
+           updateFileTimeStamp.actionPerform(logPath, previousLastTimeStamp, newLastTimeStamp, recordPath);
 
         }
 

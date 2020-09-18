@@ -17,30 +17,21 @@ import java.util.stream.Stream;
  */
 
 
-public class UpdateFileTimeStamp {
-    //    @Override
-    public void actionPerform(String previousLogPathLine,String newLogPathLine, String recordPath) throws IOException {
-//        try (Stream<String> lines = Files.lines(Path.of(recordPath))) {
-//            List<String> replaced = lines
-//                    .map(line -> line.replaceAll(previousLogPathLine, newLogPathLine))
-//                    .collect(Collectors.toList());
-//            Files.write(Path.of(recordPath), replaced);
-//        }
+public class UpdateFileTimeStamp implements TextFileWriter{
+
+    @Override
+    public void actionPerform(String logPath, String previousLastTimeStamp, String newLastTimeStamp, String recordPath) {
+        String previousLogPathLine = logPath+ " | "+newLastTimeStamp;
+        String newLogPathLine = logPath+" | "+newLastTimeStamp;
 
         try
         {
             BufferedReader br=new BufferedReader(new FileReader(recordPath));
-
-            //String buffer to store contents of the file
             StringBuffer sb=new StringBuffer("");
 
-            //Keep track of the line number
-            int linenumber=1;
             String line;
-
             while((line=br.readLine())!=null)
             {
-                //Store each valid line in the string buffer
                 if(!line.equals(previousLogPathLine)) {
                     sb.append(line + "\n");
                 }else {
@@ -51,7 +42,6 @@ public class UpdateFileTimeStamp {
             br.close();
 
             FileWriter fw=new FileWriter(new File(recordPath));
-            //Write entire string buffer into the file
             fw.write(sb.toString());
             fw.close();
         }
@@ -59,8 +49,5 @@ public class UpdateFileTimeStamp {
         {
             System.out.println("Something went horribly wrong: "+e.getMessage());
         }
-
-
     }
-
 }
