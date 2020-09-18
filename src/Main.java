@@ -1,4 +1,6 @@
 import configurationsRepository.GetLastTimeStamp;
+import configurationsRepository.PreviousLastTimeStamp;
+import configurationsRepository.PreviousLastTimeStampImpl;
 import configurationsRepository.RecodeNewFileDetails;
 import configurationsRepository.UpdateFileTimeStamp;
 
@@ -6,7 +8,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        GetLastTimeStamp getLastTimeStamp=new GetLastTimeStamp();
+        PreviousLastTimeStamp previousLastTimeStampImpl=new PreviousLastTimeStampImpl();
         RecodeNewFileDetails recodeNewFileDetails=new RecodeNewFileDetails();
         UpdateFileTimeStamp updateFileTimeStamp=new UpdateFileTimeStamp();
 
@@ -22,7 +24,7 @@ public class Main {
 
 
         //Ask previousLastTimeStamp. If this logFile is new this return "null". Other cases it returns previousLastTimeStamp from TimeStampRecord.
-        previousLastTimeStamp=getLastTimeStamp.actionPerform(logPath,recordPath);
+        previousLastTimeStamp=previousLastTimeStampImpl.getPreviousLastTimeStamp(logPath,recordPath);
         System.out.println(previousLastTimeStamp);
 
         if(previousLastTimeStamp==null){
@@ -32,13 +34,8 @@ public class Main {
         else{
             //After log analyse && if log is not new
            updateFileTimeStamp.actionPerform(logPath+" | "+previousLastTimeStamp,logPath+" | "+newLastTimeStamp, recordPath);
-//            updateFileTimeStamp.modifyFile(recordPath, previousLastTimeStamp, newLastTimeStamp)
-
 
         }
-
-
-
 
 
 
