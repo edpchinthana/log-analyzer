@@ -18,15 +18,11 @@ import java.util.stream.Stream;
 public class LogRepositoryImpl implements LogRepository{
     boolean isReadFromBegin=false;
     String lastTimeStamp;
-//    int count =0;
-//    final String type="ERROR";
 
-//    @Override
+    @Override
     public List readLogFile(String path, String lastTimeStamp) throws IOException {
         List<String> updatedLogLines=new ArrayList();
         this.lastTimeStamp=lastTimeStamp;
-        LogAnalyzer logAnalyzer=new LogAnalyzer();
-        LogReporter logReporter=new LogReporter();
         if(lastTimeStamp==null){
             isReadFromBegin=true;
         }
@@ -35,17 +31,10 @@ public class LogRepositoryImpl implements LogRepository{
                 try {
                     if(isReadFromBegin){
                         updatedLogLines.add(line);
-//                        logAnalyzer.analyzeReport(line);
-//                        logReporter.makeSummary(line);
-//                        System.out.println("Read line");
                     }
                     else if(line.contains(lastTimeStamp)){
                         this.isReadFromBegin=true;
                     }
-//                    analyzeReport(line,isReadFromBegin,lastTimeStamp);
-//                    makeSummary(line,isReadFromBegin,lastTimeStamp);
-
-//                    process(line);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -54,44 +43,46 @@ public class LogRepositoryImpl implements LogRepository{
         }
 
     }
-    final String type="ERROR";
-//    boolean isReadFromBegin=false;
-    List<LogLine> errorTimeList=new ArrayList();
-
-    public void analyzeReport(String line, boolean isReadFromBegin,String lastTimeStamp) throws ParseException {
-        this.isReadFromBegin=isReadFromBegin;
-        if(isReadFromBegin && line.indexOf(type)!=-1){
-            LogLine logLine=new LogLine(line.split(type)[0],line.split(type)[1]);
-            errorTimeList.add(logLine);
-        }
-        else if(line.contains(lastTimeStamp)){
-            this.isReadFromBegin=true;
-        }
-    }
-    public List<LogLine> getErrorTimeList(){
-        return errorTimeList;
-    }
 
 
-    final String error="ERROR";
-    final String warn="WARN";
-    final String info="INFO";
-//    boolean isReadFromBegin=false;
-    long errorCount=0l;
-    long warnCount=0l;
-    long infoCount=0l;
-    public void makeSummary(String line, boolean isReadFromBegin, String lastTimeStamp) throws ParseException {
-        if (isReadFromBegin && line.indexOf(error) != -1) {
-            errorCount++;
-        } else if (isReadFromBegin && line.indexOf(warn) != -1) {
-            warnCount++;
-        } else if (isReadFromBegin && line.indexOf(info) != -1) {
-            infoCount++;
-        }else if(line.contains(lastTimeStamp)){
-            this.isReadFromBegin=true;
-        }
-    }
-    public AnalyticalDetail getAnalyticalDetails(){
-        return new AnalyticalDetail(errorCount,warnCount,infoCount);
-    }
+//    final String type="ERROR";
+////    boolean isReadFromBegin=false;
+//    List<LogLine> errorTimeList=new ArrayList();
+//
+//    public void analyzeReport(String line, boolean isReadFromBegin,String lastTimeStamp) throws ParseException {
+//        this.isReadFromBegin=isReadFromBegin;
+//        if(isReadFromBegin && line.indexOf(type)!=-1){
+//            LogLine logLine=new LogLine(line.split(type)[0],line.split(type)[1]);
+//            errorTimeList.add(logLine);
+//        }
+//        else if(line.contains(lastTimeStamp)){
+//            this.isReadFromBegin=true;
+//        }
+//    }
+//    public List<LogLine> getErrorTimeList(){
+//        return errorTimeList;
+//    }
+//
+//
+//    final String error="ERROR";
+//    final String warn="WARN";
+//    final String info="INFO";
+////    boolean isReadFromBegin=false;
+//    long errorCount=0l;
+//    long warnCount=0l;
+//    long infoCount=0l;
+//    public void makeSummary(String line, boolean isReadFromBegin, String lastTimeStamp) throws ParseException {
+//        if (isReadFromBegin && line.indexOf(error) != -1) {
+//            errorCount++;
+//        } else if (isReadFromBegin && line.indexOf(warn) != -1) {
+//            warnCount++;
+//        } else if (isReadFromBegin && line.indexOf(info) != -1) {
+//            infoCount++;
+//        }else if(line.contains(lastTimeStamp)){
+//            this.isReadFromBegin=true;
+//        }
+//    }
+//    public AnalyticalDetail getAnalyticalDetails(){
+//        return new AnalyticalDetail(errorCount,warnCount,infoCount);
+//    }
 }
