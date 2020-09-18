@@ -1,0 +1,19 @@
+
+L
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8“£ÀÈ.
+C
+java:S1170"!Make this final field static too.(°œ²„şÿÿÿÿ8“£ÀÈ.
+N
+java:S1135"2Complete the task associated to this TODO comment.(Â†²B8ŸŒåÀÈ.
+E
+java:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“£ÀÈ.
+W
+java:S1161%":Add the "@Override" annotation above this method signature(‡èú×8“£ÀÈ.
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8“£ÀÈ.
+>
+java:S1170"!Make this final field static too.(Ä»äÊ8“£ÀÈ.
+>
+java:S1170"!Make this final field static too.(£—ß8“£ÀÈ.
+9
+java:S16432"Use a StringBuilder instead.(·ãİ8“£ÀÈ.
