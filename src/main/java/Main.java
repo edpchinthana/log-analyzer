@@ -1,7 +1,7 @@
 import emailRepository.EmailRepository;
 import emailRepository.mysql.MysqlEmailRepository;
 import emailsender.EmailSender;
-import emailsender.GmailSMTP;
+import emailsender.gmail.GmailSMTP;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Iterator;

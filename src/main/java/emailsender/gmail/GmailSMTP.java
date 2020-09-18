@@ -1,4 +1,4 @@
-package emailsender;
+package emailsender.gmail;
 
 import java.util.Date;
 import java.util.Iterator;
@@ -15,6 +15,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+
+import emailsender.EmailSender;
 import models.Email;
 
 public class GmailSMTP implements EmailSender {
