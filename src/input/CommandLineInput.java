@@ -13,6 +13,7 @@ public class CommandLineInput implements Input{
     public String readFilePath(){
             try {
                 String path = scanner.nextLine();
+                //todo implement regex here
                 return path;
             } catch (InputMismatchException ex1) {
                 throw ex1;
@@ -32,6 +33,9 @@ public class CommandLineInput implements Input{
     public String readEmail(){
         try {
             String email = scanner.nextLine();
+            //todo define regex here
+            //todo match regex with user input
+
             return email;
         }catch(InputMismatchException ex3){
             throw ex3;
@@ -43,11 +47,12 @@ public class CommandLineInput implements Input{
             int item = scanner.nextInt();
             if(item >0 && item<number) {
                 return item;
+            }else{
+                throw new InputMismatchException();
             }
         }catch(InputMismatchException ex4){
             throw ex4;
         }
-        return 0;
     }
 
 
