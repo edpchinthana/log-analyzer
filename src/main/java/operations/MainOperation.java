@@ -1,7 +1,6 @@
 package operations;
-import output.commandline.HelpMenu;
+import output.commandline.CommandlineUserInput;
 import operations.loganalyzer.InputOperation;
-import operations.loganalyzer.PrintMenuOperation;
 
 public class MainOperation {
     public static void main(String []args) {

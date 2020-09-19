@@ -1,12 +1,11 @@
 package operations.loganalyzer;
 
+import input.commandline.CommandLineInput;
 import operations.email.operationRepository;
 import operations.exit.UserExit;
-import output.Filepath;
-import output.Summary;
 import output.EmailMenu;
-import input.commandline
-
+import output.commandline.FilePath;
+import output.commandline.Summary;
 
 
 public class InputOperation {

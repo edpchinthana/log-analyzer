@@ -1,5 +1,7 @@
 package operations.email;
 
+import input.commandline.CommandLineInput;
+
 public class operationRepository {
     public void divideSections(){
 
