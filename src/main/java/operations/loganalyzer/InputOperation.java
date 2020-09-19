@@ -5,6 +5,7 @@ import operations.exit.UserExit;
 import output.Filepath;
 import output.Summary;
 import output.EmailMenu;
+import input.commandline
 
 
 
@@ -51,25 +52,11 @@ public class InputOperation {
                 /*
                 emailuserinputclass chose=new emailuserinputclass();
                  String s=chose.methodn();
-                 return s;
-
-
-                //choose one option
-                if(s.equals("a")){
-                    addEmailOperation addemail=new addEmailOperation();
-                    addemail.add();
-                }else if(s.equals("b")){
-                    deletEmailOperation deletemail=new deletEmailOperation();
-                    deletemail.delete();
-                }else{
-                    getEmailOperation getEmail=new getEmailOperation();
-                    getEmail.get();
-                }*/
+                 return s;*/
                 break;
 
             default:
-                //save current timestamp in the text file-overwrite
-                //exit from the application call user exit
+                //for exit from the application call user exit class
                 UserExit obj=new UserExit();
                 obj.appExit();
                 break;

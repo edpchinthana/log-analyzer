@@ -1,17 +1,15 @@
 package operations;
-
+import output.commandline.HelpMenu;
 import operations.loganalyzer.InputOperation;
 import operations.loganalyzer.PrintMenuOperation;
 
 public class MainOperation {
     public static void main(String []args) {
-
-        while() {
-            //log Analyzer part
-
-            //call to print menu operation
-            PrintMenuOperation menu = new PrintMenuOperation();
-            menu.printMenu();
+        boolean shouldContinue = true;
+        while(true) {
+            //call to print menu
+            CommandlineUserInput menu = new CommandlineUserInput();
+            menu.displayHelpMenu();
 
             //switch in input
             InputOperation input = new InputOperation();
@@ -22,6 +20,7 @@ public class MainOperation {
             //Email manage part
 
             //call to exit
+
         }
     }
 }

@@ -3,7 +3,8 @@ import java.util.*;
 import java.lang.*;
 
 public class UserExit {
-    public voit appExit(){
-        //exit
+    public void appExit(){
+        //exit from the application
         System.exit(0);
     }
+}
