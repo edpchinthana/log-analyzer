@@ -1,3 +1,35 @@
 
 ?
 logAnalyzer.iml,e/a/ea06f0ab7676f662edf59decc09bb807139968fb
+W
+'src/main/java/operations/Operation.java,3/3/33e7df27fcdcaa40bd07cd576fb7e5ce5b20cc71
+]
+-src/main/java/emailsender/EmailFormatter.java,3/a/3a4e1d6ba8a8adec984a0826927c94d2f352c8df
+Z
+*src/main/java/emailsender/EmailSender.java,f/b/fb202430db2c72c3b423f917ca3f4631b4071bb5
+^
+.src/main/java/emailsender/gmail/GmailSMTP.java,6/4/64165189ffae8e0988809ddf37dafca8cf2126b1
+a
+1src/main/java/emailRepository/mysql/AddEmail.java,c/8/c8fe5e0bd4b0ba0caf234d0b42631d897bf6d69e
+d
+4src/main/java/emailRepository/mysql/DeleteEmail.java,9/b/9b1b63f9b013da7f306d74fe808f6760b0670e0f
+b
+2src/main/java/emailRepository/mysql/GetEmails.java,a/5/a5f7e45c4a96e544b738261d05e94ee2e1c8be06
+O
+src/main/java/models/Email.java,c/e/ced35056205b31eab72cb79a48339fe3b981a5a2
+m
+=src/main/java/emailRepository/mysql/MysqlEmailRepository.java,e/a/ea367c3462b516f88a6e02aa88c43a0830a42f00
+G
+src/main/java/Main.java,e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
+Q
+!src/main/java/models/LogLine.java,0/6/063b26f6a77c54bd6de2db4f00124b44f9a4dcfa
+S
+#src/main/java/models/LogReport.java,c/f/cf327d608882f7afe71bc31a58b6d09bedd09d0d
+^
+.src/main/java/logRepository/LogRepository.java,c/6/c600879220c73f39ac9d6c354c8153f16cc8f88f
+f
+6src/main/java/input/commandlineInput/ReadMenuItem.java,b/7/b77207ca481ae13574ed30e1a30f126e833f7720
+f
+6src/main/java/input/commandlineInput/ReadFilePath.java,f/f/ff2faa5e4237dccf90ed0b22a97bc6ddd8bc4f91
+c
+3src/main/java/input/commandlineInput/ReadEmail.java,9/3/9339b96a16e91a58f1acfa88fb984da79a71be11

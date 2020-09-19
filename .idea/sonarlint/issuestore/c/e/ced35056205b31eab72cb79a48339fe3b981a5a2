@@ -1,7 +1,7 @@
 
-m	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑóÛíýÿÿÿÿ8¿í¸¿È.
-p	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¥ì«üÿÿÿÿ8¿í¸¿È.
-m	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÇÑÌþÿÿÿÿ8¿í¸¿È.
-p	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö‡‹Ëÿÿÿÿÿ8¿í¸¿È.
-w	java:S116"XRename this field "email_address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ©Ö¤øÿÿÿÿ8¿í¸¿È.
-p	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÇÑÌþÿÿÿÿ8¿í¸¿È.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö‡‹Ëÿÿÿÿÿ8¿í¸¿È.
+y	java:S116"XRename this field "email_address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ©Ö¤øÿÿÿÿ8¿í¸¿È.
+o	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑóÛíýÿÿÿÿ8¿í¸¿È.
+r	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÇÑÌþÿÿÿÿ8¿í¸¿È.
+o	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÇÑÌþÿÿÿÿ8¿í¸¿È.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¥ì«üÿÿÿÿ8¿í¸¿È.

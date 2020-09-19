@@ -1,5 +1,12 @@
 
-]	java:S125""<This block of commented-out lines of code should be removed.(øÓËßøÿÿÿÿ8†îä¯É.
-V
-java:S1481,"9Remove this unused "timeStampsRecodePath" local variable.(‚”ÂÑ8ÙÉ€°É.
-X	java:S125"<This block of commented-out lines of code should be removed.(©ô’ó8†îä¯É.
+L
+java:S3740"/Provide the parametrized type for this generic.(ñÝÕø8é“à©Ê.
+Q
+java:S3740""/Provide the parametrized type for this generic.(¸ãÁúûÿÿÿÿ8é“à©Ê.
+L
+java:S3740:"/Provide the parametrized type for this generic.(ú„¶Æ8é“à©Ê.
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(»ÄÇÑ8é“à©Ê.
+X
+java:S1119";Refactor the code to remove this label and the need for it.(Ë¸”Ç8é“à©Ê.
+m	java:S128 "LEnd this switch case with an unconditional break, return or throw statement.(ªëÅÞúÿÿÿÿ8é“à©Ê.
