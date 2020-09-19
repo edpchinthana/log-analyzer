@@ -9,8 +9,7 @@ public class MysqlEmailRepository implements EmailRepository {
 
     public List<Email> getEmails() {
         GetEmails getEmails = new GetEmails();
-        List<Email> emailList = getEmails.perform();
-        return emailList;
+        return getEmails.perform();
     }
 
     public void addEmail(Email email) {
