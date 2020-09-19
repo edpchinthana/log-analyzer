@@ -5,15 +5,16 @@ import operations.email.operationRepository;
 import operations.exit.UserExit;
 import output.commandline.FilePath;
 import output.commandline.Summary;
+import output.commandline.HelpMenu;
 
 
-public class InputOperation {
+public class InputOperation{
 
-    public String checkInput(){
+    public int checkInput(){
 
-        //call to get user input
+       
         CommandLineInput item=new CommandLineInput();
-        int fact= item.readMenuItem();
+        int fact= item.readMenuItem(this.menuNumber);
 
 
         switch (fact){
@@ -23,8 +24,8 @@ public class InputOperation {
                 FilePath path= new FilePath();
                 path.print();
                 //get list from package log repo
-                getlistoferror errormsg=new gerlistoferror();
-                errormsg.method-name();
+               // getlistoferror errormsg=new gerlistoferror();
+                //errormsg.method-name();
                 //pass error list emialrepo
                 break;
 

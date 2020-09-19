@@ -14,11 +14,6 @@ public class MainOperation {
             InputOperation input = new InputOperation();
             input.checkInput();
 
-            //email
-
-            //Email manage part
-
-            //call to exit
 
         }
     }
