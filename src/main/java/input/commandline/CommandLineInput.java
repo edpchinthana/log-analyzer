@@ -1,4 +1,4 @@
-package input.commandlineInput;
+package input.commandline;
 
 import input.Input;
 import java.util.Scanner;

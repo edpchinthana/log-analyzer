@@ -11,7 +11,7 @@ import java.util.List;
 public class GetEmails extends DBConnection {
 
     public List<Email> perform() {
-        ArrayList emailsList = new ArrayList();
+        List<Email> emailsList = new ArrayList();
 
         try {
             Connection con = this.createConnection();

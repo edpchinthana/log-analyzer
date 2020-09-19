@@ -1,4 +1,4 @@
-package input.commandlineInput;
+package input.commandline;
 
 import java.util.InputMismatchException;
 import java.util.regex.Pattern;
