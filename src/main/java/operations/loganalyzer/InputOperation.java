@@ -3,7 +3,6 @@ package operations.loganalyzer;
 import input.commandline.CommandLineInput;
 import operations.email.operationRepository;
 import operations.exit.UserExit;
-import output.EmailMenu;
 import output.commandline.FilePath;
 import output.commandline.Summary;
 

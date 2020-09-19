@@ -1,9 +1,11 @@
 package operations.email;
 
+import emailRepository.mysql.MysqlEmailRepository;
+
 public class AddEmailOperation {
     public void add() {
-        inputemailclass email = new inputemailclass();
-        String newEmail = email.readEmail();
-        //pass new email to pasindu
+        MysqlEmailRepository email = new MysqlEmailRepository();
+      email.addEmail();
+
     }
 }
