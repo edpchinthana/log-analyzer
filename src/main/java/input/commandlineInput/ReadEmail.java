@@ -7,7 +7,7 @@ public class ReadEmail extends CommandLineInput{
     public String perform(){
         try {
             String email = scanner.nextLine();
-            String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+            String regex = "^[\\w-_.+]*[\\w-_.]@([\\w]+\\.)+[\\w]+[\\w]$";
             if(email.matches(regex)){
                 return  email;
             }
