@@ -5,7 +5,7 @@ public interface Input {
     String readFilePath();
     String readName();
     String readEmail();
-    int readMenuItem(int number);
+    int readMenuItem(int maxNoOfItems);
 
 }
 
