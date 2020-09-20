@@ -5,16 +5,12 @@ import emailrepository.EmailRepository;
 import emailsender.EmailSender;
 import input.Input;
 import logrepository.LogRepository;
+import models.ConfigurationModel;
 import output.Output;
 
 public class DeleteEmailOperation implements Operation {
     @Override
-    public void execute(Input input,
-                        Output output,
-                        ConfigurationRepository configurationRepository,
-                        EmailRepository emailRepository,
-                        LogRepository logRepository,
-                        EmailSender emailSender) {
+    public void execute(ConfigurationModel configurationModel) {
 
     }
 }

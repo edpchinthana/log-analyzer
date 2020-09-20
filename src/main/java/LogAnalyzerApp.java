@@ -3,6 +3,7 @@ import emailrepository.EmailRepository;
 import emailsender.EmailSender;
 import input.Input;
 import logrepository.LogRepository;
+import models.ConfigurationModel;
 import operations.Operation;
 import operations.OperationFactory;
 import output.Output;
@@ -15,16 +16,13 @@ public class LogAnalyzerApp {
                        LogRepository logRepository,
                        EmailSender emailSender
                        ){
+        ConfigurationModel configurationModel = null;
         OperationFactory operationFactory = new OperationFactory();
         Operation operation = null;
         while(true){
             output.showMenu();
             operationFactory.getInstance(input.readNumber());
-            operation.execute(input, output,
-                    configurationRepository,
-                    emailRepository,
-                    logRepository,
-                    emailSender);
+            operation.execute(configurationModel);
         }
     }
 }
