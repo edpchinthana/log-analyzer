@@ -5,14 +5,19 @@ public class OperationFactory {
         Operation operation = null;
         switch (selector){
             case 1:
+                operation = new AnalyzeLogOperation();
                 break;
             case 2:
+                operation = new ViewEmailsOperation();
                 break;
             case 3:
+                operation = new AddEmailOperation();
                 break;
             case 4:
+                operation = new DeleteEmailOperation();
                 break;
-            case 5:
+            default:
+                operation = new ExitOperation();
                 break;
         }
         return operation;

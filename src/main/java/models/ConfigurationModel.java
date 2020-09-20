@@ -1,5 +1,7 @@
 package models;
 
+import java.text.ParseException;
+
 public class ConfigurationModel {
     private DatabaseConfigurationModel databaseConfiguration;
     private EmailSenderConfigurationModel emailSenderConfiguration;
@@ -30,10 +32,9 @@ public class ConfigurationModel {
         this.emailSenderConfiguration = emailSenderConfiguration;
     }
 
-    public String getLastTimestamp() {
-        return this.lastTimestamp;
+    public String getLastTimestamp () throws ParseException {
+        return lastTimestamp;
     }
-
     public void setLastTimestamp(String lastTimestamp) {
         this.lastTimestamp = lastTimestamp;
     }

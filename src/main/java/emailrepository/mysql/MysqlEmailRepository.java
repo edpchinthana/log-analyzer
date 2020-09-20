@@ -9,8 +9,6 @@ import models.DatabaseConfigurationModel;
 import models.Email;
 
 public class MysqlEmailRepository implements EmailRepository {
-    public MysqlEmailRepository() {
-    }
 
     public List<Email> getEmails(DatabaseConfigurationModel databaseConfigurationModel) {
         GetEmails getEmails = new GetEmailsImpl();

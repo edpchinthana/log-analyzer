@@ -5,13 +5,12 @@ import emailrepository.EmailRepository;
 import emailsender.EmailSender;
 import input.Input;
 import logrepository.LogRepository;
+import models.ConfigurationModel;
 import output.Output;
 
+import java.io.IOException;
+import java.text.ParseException;
+
 public interface Operation {
-    void execute(Input input,
-                 Output output,
-                 ConfigurationRepository configurationRepository,
-                 EmailRepository emailRepository,
-                 LogRepository logRepository,
-                 EmailSender emailSender);
+    void execute(ConfigurationModel configurationModel) throws ParseException, IOException;
 }
