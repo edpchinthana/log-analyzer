@@ -1,6 +1,9 @@
 package output.commandline;
 
+import models.Email;
 import output.Output;
+
+import java.util.List;
 
 public class CommandLineOutput implements Output {
     @Override
@@ -19,5 +22,11 @@ public class CommandLineOutput implements Output {
     public void showException(Exception exception) {
         ShowException showException = new ShowExceptionImpl();
         showException.perform(exception);
+    }
+
+    @Override
+    public void viewEmails(List<Email> emailList) {
+        ViewEmails viewEmails = new ViewEmailsImpl();
+        viewEmails.perform(emailList);
     }
 }
