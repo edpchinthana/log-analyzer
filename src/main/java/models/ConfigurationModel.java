@@ -1,5 +1,11 @@
 package models;
 
+import utils.TimestampConvertor;
+import utils.TimestampConvertorImpl;
+
+import java.sql.Timestamp;
+import java.text.ParseException;
+
 public class ConfigurationModel {
     private DatabaseConfigurationModel databaseConfiguration;
     private EmailSenderConfigurationModel emailSenderConfiguration;
@@ -30,10 +36,14 @@ public class ConfigurationModel {
         this.emailSenderConfiguration = emailSenderConfiguration;
     }
 
-    public String getLastTimestamp() {
+    public String getLastTimestampStr() {
         return this.lastTimestamp;
     }
 
+    public Timestamp getLastTimestamp () throws ParseException {
+        TimestampConvertor convertor = new TimestampConvertorImpl();
+        return convertor.stringToTimestamp(lastTimestamp);
+    }
     public void setLastTimestamp(String lastTimestamp) {
         this.lastTimestamp = lastTimestamp;
     }
