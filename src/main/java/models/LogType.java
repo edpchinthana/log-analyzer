@@ -1,4 +1,7 @@
 package models;
 
-public class LogType {
+enum LogType {
+    ERROR,
+    WARN,
+    INFO
 }
