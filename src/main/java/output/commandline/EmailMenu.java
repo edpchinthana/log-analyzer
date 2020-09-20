@@ -10,6 +10,7 @@ public class EmailMenu{
         System.out.println("1. View emails");
         System.out.println("2. Add emails");
         System.out.println("3. Delete emails");
+        System.out.println("4. Back");
         System.out.println("Which option do you want to proceed?");
     }
 

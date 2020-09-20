@@ -15,7 +15,7 @@ public class ViewEmails implements EmailMenuOperation{
         System.out.println("Email Addresses");
         List<Email> emailList = emailRepository.getEmails();
         for(Email email: emailList){
-            System.out.println(email.getName()+" "+email.getEmail_address());
+            System.out.println(email.getId()+" "+email.getName()+" "+email.getEmail_address());
         }
     }
 }

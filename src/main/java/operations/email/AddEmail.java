@@ -20,7 +20,7 @@ public class AddEmail implements EmailMenuOperation{
         System.out.println("Enter email address");
         String emailAddress = input.readEmail();
 
-        email = new Email(emailAddress, username);
+        email = new Email(username, emailAddress);
         emailRepository.addEmail(email);
     }
 }

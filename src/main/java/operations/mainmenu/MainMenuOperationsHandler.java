@@ -6,10 +6,13 @@ import operations.Operation;
 import output.Output;
 import output.commandline.CommandlineUserOutput;
 
+import java.io.IOException;
+import java.text.ParseException;
+
 public class MainMenuOperationsHandler implements Operation {
 
     @Override
-    public void runApplication(){
+    public void runApplication() throws IOException, ParseException {
         Output output = new CommandlineUserOutput();
         Input input = new CommandLineInput();
         MainMenuOperationFactory mainMenuOperationFactory = new MainMenuOperationFactory();

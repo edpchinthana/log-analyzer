@@ -14,7 +14,7 @@ public class ManageEmailRepository implements MainMenuOperation {
         EmailMenuOperationFactory emailMenuOperationFactory = new EmailMenuOperationFactory();
 
         output.displayEmailMenu();
-        EmailMenuOperation operation = emailMenuOperationFactory.getInstance( input.readMenuItem(4));
+        EmailMenuOperation operation = emailMenuOperationFactory.getInstance( input.readMenuItem(5));
         operation.execute();
 
     }

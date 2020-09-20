@@ -5,13 +5,17 @@ public class EmailMenuOperationFactory {
         EmailMenuOperation operation = null;
         switch (menuSelector){
             case 1:
-                operation = new AddEmail();
+                operation = new ViewEmails();
                 break;
             case 2:
-                operation = new DeleteEmail();
+                operation = new AddEmail();
+
                 break;
             case 3:
-                operation = new ViewEmails();
+                operation = new DeleteEmail();
+                break;
+            case 4:
+                operation = new ExitFromEmailMenu();
                 break;
         }
         return operation;
