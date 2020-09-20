@@ -1,4 +1,4 @@
-package emailSender;
+package emailsender;
 
 import java.util.List;
 import models.Email;
