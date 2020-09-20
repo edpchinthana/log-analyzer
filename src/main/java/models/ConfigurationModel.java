@@ -36,13 +36,8 @@ public class ConfigurationModel {
         this.emailSenderConfiguration = emailSenderConfiguration;
     }
 
-    public String getLastTimestampStr() {
-        return this.lastTimestamp;
-    }
-
-    public Timestamp getLastTimestamp () throws ParseException {
-        TimestampConvertor convertor = new TimestampConvertorImpl();
-        return convertor.stringToTimestamp(lastTimestamp);
+    public String getLastTimestamp () throws ParseException {
+        return lastTimestamp;
     }
     public void setLastTimestamp(String lastTimestamp) {
         this.lastTimestamp = lastTimestamp;

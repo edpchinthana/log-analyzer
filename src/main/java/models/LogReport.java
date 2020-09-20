@@ -52,6 +52,11 @@ public class LogReport {
         return convertor.timestampToString(this.lastTimestamp);
     }
 
+    public String getLastTimestampStrForConfiguration(){
+        TimestampConvertor convertor = new TimestampConvertorImpl();
+        return convertor.timestampToStringForConfiguration(this.lastTimestamp);
+    }
+
     public int getErrorCount() {
         return errorCount;
     }
