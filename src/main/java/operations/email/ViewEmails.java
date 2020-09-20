@@ -2,8 +2,6 @@ package operations.email;
 
 import emailRepository.EmailRepository;
 import emailRepository.mysql.MysqlEmailRepository;
-import input.Input;
-import input.commandline.CommandLineInput;
 import models.Email;
 
 import java.util.List;
