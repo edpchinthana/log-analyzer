@@ -44,10 +44,11 @@ public class AnalyzeLogOperation implements  Operation {
 
         output.showSummary(logReport);
 
-        if(emailList.size()==0){
+        if(emailList.isEmpty()){
             output.showMessage("No email addresses in the database");
         }else{
             emailSender.sendEmails(emailList,logReport,configurationModel.getEmailSenderConfiguration());
+            output.showMessage("Emails were sent successfully");
             configurationModel.setLastTimestamp(logReport.getLastTimestampStrForConfiguration());
             configurationRepository.exportConfiguration(configurationModel);
             System.out.println("--bye--");

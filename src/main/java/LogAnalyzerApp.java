@@ -12,6 +12,7 @@ import output.Output;
 import output.commandline.CommandLineOutput;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.text.ParseException;
 
 public class LogAnalyzerApp {
@@ -20,16 +21,22 @@ public class LogAnalyzerApp {
         Output output = new CommandLineOutput();
         Input input = new CommandLineInput();
 
-        ConfigurationModel configurationModel = null;
+        ConfigurationModel configurationModel;
         OperationFactory operationFactory = new OperationFactory();
         Operation operation = null;
 
-        configurationModel = configurationRepository.importConfiguration();
 
-        while(true){
-            output.showMenu();
-            operation = operationFactory.getInstance(input.readNumber());
-            operation.execute(configurationModel);
-        }
+
+            configurationModel = configurationRepository.importConfiguration();
+
+            while(true){
+
+                    output.showMenu();
+                    operation = operationFactory.getInstance(input.readNumber());
+                    operation.execute(configurationModel);
+
+
+            }
+
     }
 }

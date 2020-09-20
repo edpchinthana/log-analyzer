@@ -1,9 +1,5 @@
 package models;
 
-import utils.TimestampConvertor;
-import utils.TimestampConvertorImpl;
-
-import java.sql.Timestamp;
 import java.text.ParseException;
 
 public class ConfigurationModel {

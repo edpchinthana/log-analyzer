@@ -20,9 +20,9 @@ public class CommandLineOutput implements Output {
     }
 
     @Override
-    public void showException(Exception exception) {
+    public void showException(String message) {
         ShowException showException = new ShowExceptionImpl();
-        showException.perform(exception);
+        showException.perform(message);
     }
 
     @Override

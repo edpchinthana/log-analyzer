@@ -8,7 +8,7 @@ import java.util.List;
 public interface Output {
     void showMessage(String message);
     void showMenu();
-    void showException(Exception exception);
+    void showException(String message);
     void viewEmails(List<Email> emailList);
     void showSummary(LogReport logReport);
 }

@@ -8,8 +8,6 @@ import models.ConfigurationModel;
 
 
 public class ExportConfigurationImpl implements ExportConfiguration {
-    public ExportConfigurationImpl() {
-    }
 
     public void perform(ConfigurationModel configuration, String configurationFilePath) {
         File configurationFile = new File(configurationFilePath);

@@ -3,16 +3,8 @@ package configurations.impl;
 import configurations.ConfigurationRepository;
 import models.ConfigurationModel;
 
-/**
- * Created by Padma Gnanapiya (SE/2017/014)
- */
-
-
 public class ConfigurationRepositoryImpl implements ConfigurationRepository {
-    final String configurationFilePath = "configuration.json";
-
-    public ConfigurationRepositoryImpl() {
-    }
+    final static String configurationFilePath = "configuration.json";
 
     @Override
     public ConfigurationModel importConfiguration() {
