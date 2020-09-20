@@ -6,14 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import models.ConfigurationModel;
 
-/**
- * Created by Padma Gnanapiya (SE/2017/014)
- */
-
 
 public class ExportConfigurationImpl implements ExportConfiguration {
-    public ExportConfigurationImpl() {
-    }
 
     public void perform(ConfigurationModel configuration, String configurationFilePath) {
         File configurationFile = new File(configurationFilePath);

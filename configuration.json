@@ -1,1 +1,1 @@
-{"databaseConfiguration":{"host":"localhost","port":"3306","user":"root","password":"","dbName":"log_analyzer"},"emailSenderConfiguration":{"host":"smtp.gmail.com","port":"465","sender":"javaloganalyzer@gmail.com","password":"loganalyzer2020"},"lastTimestamp":"1970-01-01T00:00:03Z"}
+{"databaseConfiguration":{"host":"localhost","port":"3306","user":"root","password":"","dbName":"log_analyzer"},"emailSenderConfiguration":{"host":"smtp.gmail.com","port":"465","sender":"javaloganalyzer@gmail.com","password":"loganalyzer2020"},"lastTimestamp":"1970-01-01T00:00:05Z"}

@@ -10,6 +10,6 @@ public class ShowMenuImpl implements ShowMenu{
         System.out.println("  4 - Delete email address");
         System.out.println("  5 - Exit");
         System.out.println("-----------------------------------\n");
-        System.out.print("Enter your choice : ");
+        System.out.println("Enter your choice : ");
     }
 }

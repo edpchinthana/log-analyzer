@@ -11,8 +11,6 @@ import org.json.simple.parser.JSONParser;
 
 
 public class ImportConfigurationImpl implements ImportConfiguration {
-    public ImportConfigurationImpl() {
-    }
 
     @Override
     public ConfigurationModel perform(String configurationFilePath) {
@@ -21,7 +19,7 @@ public class ImportConfigurationImpl implements ImportConfiguration {
 
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            configuration = (ConfigurationModel)objectMapper.readValue(new FileReader(configurationFilePath), ConfigurationModel.class);
+            configuration = objectMapper.readValue(new FileReader(configurationFilePath), ConfigurationModel.class);
         } catch (Exception var5) {
             System.out.println(var5);
         }

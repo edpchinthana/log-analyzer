@@ -17,7 +17,7 @@ public class LogAnalyzerImpl implements LogAnalyzer {
         String line;
         TimestampConvertor timestampConvertor = new TimestampConvertorImpl();
         LogReport logReport = new LogReport();
-
+        logReport.setLastTimestamp(lastTimestamp);
         while((line = bufferedReader.readLine()) != null){
             LogLine logLine = new LogLine(line);
             if(timestampConvertor.compareTo(logLine.getTimestamp(),lastTimestamp)){

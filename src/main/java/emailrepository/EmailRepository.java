@@ -5,9 +5,9 @@ import models.DatabaseConfigurationModel;
 import models.Email;
 
 public interface EmailRepository {
-    List<Email> getEmails(DatabaseConfigurationModel var1);
+    List<Email> getEmails(DatabaseConfigurationModel databaseConfigurationModel);
 
-    void addEmail(Email var1, DatabaseConfigurationModel var2);
+    void addEmail(Email var1, DatabaseConfigurationModel databaseConfigurationModel);
 
-    void deleteEmail(int var1, DatabaseConfigurationModel var2);
+    void deleteEmail(int var1, DatabaseConfigurationModel databaseConfigurationModel);
 }

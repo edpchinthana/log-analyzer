@@ -1,5 +1,5 @@
 package output.commandline;
 
 public interface ShowException {
-    void perform(Exception exception);
+    void perform(String message);
 }
