@@ -5,6 +5,10 @@ public class Email {
     String name;
     String email_address;
 
+    public Email(){
+
+    }
+
     public Email(String name, String email_address) {
         this.name = name;
         this.email_address = email_address;
