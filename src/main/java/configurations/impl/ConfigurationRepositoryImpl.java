@@ -17,12 +17,12 @@ public class ConfigurationRepositoryImpl implements ConfigurationRepository {
     @Override
     public ConfigurationModel importConfiguration() {
         ImportConfiguration importConfiguration = new ImportConfigurationImpl();
-        return importConfiguration.perform("configuration.json");
+        return importConfiguration.perform(configurationFilePath);
     }
 
     @Override
     public void exportConfiguration(ConfigurationModel configuration) {
         ExportConfiguration exportConfiguration = new ExportConfigurationImpl();
-        exportConfiguration.perform(configuration, "configuration.json");
+        exportConfiguration.perform(configuration, configurationFilePath);
     }
 }

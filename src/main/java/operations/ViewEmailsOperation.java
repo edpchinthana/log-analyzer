@@ -18,6 +18,5 @@ public class ViewEmailsOperation implements Operation{
         List<Email> emailList = emailRepository.getEmails(configurationModel.getDatabaseConfiguration());
         output.showMessage("\n---View Email---");
         output.viewEmails(emailList);
-        output.showMessage("\n");
     }
 }

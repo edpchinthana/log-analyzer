@@ -16,7 +16,8 @@ public class OperationFactory {
             case 4:
                 operation = new DeleteEmailOperation();
                 break;
-            case 5:
+            default:
+                operation = new ExitOperation();
                 break;
         }
         return operation;
