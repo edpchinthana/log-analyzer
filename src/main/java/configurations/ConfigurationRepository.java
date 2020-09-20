@@ -1,4 +1,4 @@
-package configurationsRepository;
+package configurations;
 
 import models.ConfigurationModel;
 
