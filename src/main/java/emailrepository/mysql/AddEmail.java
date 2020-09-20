@@ -1,5 +1,8 @@
 package emailrepository.mysql;
 
-public interface AddEmail {
+import models.DatabaseConfigurationModel;
+import models.Email;
 
+public interface AddEmail {
+    void perform(Email var1, DatabaseConfigurationModel var2);
 }

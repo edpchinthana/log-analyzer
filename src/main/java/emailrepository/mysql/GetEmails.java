@@ -1,5 +1,9 @@
 package emailrepository.mysql;
 
-public interface GetEmails {
+import java.util.List;
+import models.DatabaseConfigurationModel;
+import models.Email;
 
+public interface GetEmails {
+    List<Email> perform(DatabaseConfigurationModel var1);
 }

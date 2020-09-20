@@ -1,5 +1,7 @@
 package emailrepository.mysql;
 
-public interface DeleteEmail {
+import models.DatabaseConfigurationModel;
 
+public interface DeleteEmail {
+    void perform(int var1, DatabaseConfigurationModel var2);
 }
