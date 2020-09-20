@@ -1,35 +1,17 @@
 package input.commandline;
 
 import input.Input;
-import java.util.Scanner;
 
 public class CommandLineInput implements Input {
-
-    final Scanner scanner;
-    public CommandLineInput(){
-        this.scanner=new Scanner(System.in);
+    @Override
+    public String readString() {
+        ReadString readString = new ReadStringImpl();
+        return  readString.perform();
     }
 
-    public String readFilePath(){
-           ReadFilePath readFilePath = new ReadFilePath();
-           return  readFilePath.perform();
+    @Override
+    public int readNumber() {
+        ReadNumber readNumber = new ReadNumberImpl();
+        return readNumber.perform();
     }
-
-    public String readName(){
-        ReadName readName = new ReadName();
-        return readName.perform();
-    }
-
-    public String readEmail(){
-        ReadEmail readEmail = new ReadEmail();
-        return readEmail.perform();
-    }
-
-    public int readMenuItem(int maxNoOfItems){
-        ReadMenuItem readMenuItem = new ReadMenuItem();
-        return readMenuItem.perform(maxNoOfItems);
-    }
-
 }
-
-

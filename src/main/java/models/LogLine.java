@@ -1,40 +1,51 @@
 package models;
 
+import utils.TimestampConvertor;
+import utils.TimestampConvertorImpl;
+
+import java.sql.Timestamp;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-/**
- * Created by Padma Gnanapiya (SE/2017/014)
- */
-
 
 public class LogLine {
+    private LogType type;
     private String message;
-    private Date timeStampDate;
+    private Timestamp timestamp;
 
 
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-//    SimpleDateFormat output = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public LogLine(String logLineStr) throws ParseException {
+        TimestampConvertor timestampConvertor = new TimestampConvertorImpl();
+        LogType typeTemp = null;
 
+        if(logLineStr.contains(LogType.ERROR.toString())){
+            typeTemp = LogType.ERROR;
+        }else if(logLineStr.contains(LogType.WARN.toString())){
+            typeTemp = LogType.WARN;
+        }else if(logLineStr.contains(LogType.INFO.toString())){
+            typeTemp = LogType.INFO;
+        }
+        if(typeTemp!=null){
+            this.type = typeTemp;
+            this.timestamp = timestampConvertor.stringToTimestamp( logLineStr.split(type.toString())[0]);
+            this.message = logLineStr.split(type.toString())[1];
+        }
 
-    //Constructor
-    public LogLine() {
     }
 
-    //Constructor
-    public LogLine(String timeStamp, String message) throws ParseException {
-        this.timeStampDate = sdf.parse(timeStamp);
-        this.message = message;
+    public String getTimestampStr() {
+        TimestampConvertor convertor = new TimestampConvertorImpl();
+        return convertor.timestampToString(timestamp);
     }
 
-    //return Timestamp
-    public Date getTimeStamp() {
-        return timeStampDate;
+    public LogType getType() {
+        return type;
     }
 
-    //return error details
     public String getMessage() {
         return message;
     }
+
+    public Timestamp getTimestamp() {
+        return timestamp;
+    }
+
 }

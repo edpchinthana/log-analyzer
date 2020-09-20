@@ -1,41 +1,41 @@
 package emailsender.gmail;
 
-import java.util.List;
-import java.util.Properties;
-import javax.mail.Authenticator;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+import emailsender.EmailFormatter;
+import emailsender.EmailFormatterImpl;
+import emailsender.EmailSender;
+import models.Email;
+import models.EmailSenderConfigurationModel;
+import models.LogReport;
+
+import javax.mail.*;
 import javax.mail.Message.RecipientType;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-
-import emailsender.EmailSender;
-import models.Email;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
 
 public class GmailSMTP implements EmailSender {
-    final String from = "javaloganalyzer@gmail.com";
-    final String password = "loganalyzer2020";
-    final String host = "smtp.gmail.com";
-    final Properties properties = System.getProperties();
 
+    public void sendEmails(List<Email> emailList, LogReport logReport, EmailSenderConfigurationModel emailSenderConfigurationModel) {
+        final String sender = emailSenderConfigurationModel.getSender();
+        final String password = emailSenderConfigurationModel.getPassword();
+        final EmailFormatter emailFormatter = new EmailFormatterImpl();
 
-    //todo : implement error handling functions
-    public GmailSMTP() {
-        this.properties.put("mail.smtp.host", "smtp.gmail.com");
-        this.properties.put("mail.smtp.port", "465");
-        this.properties.put("mail.smtp.ssl.enable", "true");
-        this.properties.put("mail.smtp.auth", "true");
-    }
+        String host = emailSenderConfigurationModel.getHost();
+        String port = emailSenderConfigurationModel.getPort();
+        Properties properties = System.getProperties();
+        properties.put("mail.smtp.host", host);
+        properties.put("mail.smtp.port", port);
+        properties.put("mail.smtp.ssl.enable", "true");
+        properties.put("mail.smtp.auth", "true");
+        Session session = Session.getInstance(properties, new Authenticator() {
 
-    public void sendEmails(List<Email> emailList, List<String> errorList) {
-        Session session = Session.getInstance(this.properties, new Authenticator() {
+            @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(from, password);
+                return new PasswordAuthentication(sender, password);
             }
         });
 
@@ -45,24 +45,23 @@ public class GmailSMTP implements EmailSender {
             message.setSubject("Log Analyzer Report");
             Multipart multipart = new MimeMultipart();
             MimeBodyPart textPart = new MimeBodyPart();
-            String body = "Error\n";
-            for(String error: errorList){
-                body = body + error + "\n";
-            }
+            String body =  emailFormatter.getEmailBody(logReport);
+
+            Iterator var14;
 
             textPart.setText(body);
             multipart.addBodyPart(textPart);
             message.setContent(multipart);
             System.out.println("sending...");
+            var14 = emailList.iterator();
 
-            for(Email email: emailList){
+            while(var14.hasNext()) {
+                Email email = (Email)var14.next();
                 message.addRecipient(RecipientType.BCC, new InternetAddress(email.getEmail_address()));
                 Transport.send(message);
             }
-
-            System.out.println("Sent message successfully....");
-        } catch (MessagingException e) {
-            e.printStackTrace();
+        } catch (MessagingException var16) {
+            var16.printStackTrace();
         }
 
     }

@@ -1,11 +1,7 @@
 package emailsender;
 
-import java.util.List;
+import models.LogReport;
 
-public class EmailFormatter {
-    String formatEmailBody(List<String> errorList){
-        String body = "";
-        //todo : implement formatter after adding LogLine model
-        return body;
-    }
+public interface EmailFormatter {
+    String getEmailBody(LogReport logReport);
 }
