@@ -28,6 +28,7 @@ public class DBConnectionTest {
         Mockito.when(mockConnection.createStatement()).thenReturn(mockStatement);
         Mockito.when(mockConnection.createStatement().executeUpdate(Mockito.any())).thenReturn(1);
         Mockito.verify(mockConnection.createStatement(), Mockito.times(1));
+
     }
 }
 
