@@ -11,8 +11,11 @@ import operations.OperationFactory;
 import output.Output;
 import output.commandline.CommandLineOutput;
 
+import java.io.IOException;
+import java.text.ParseException;
+
 public class LogAnalyzerApp {
-    public void runApp(){
+    public void runApp() throws IOException, ParseException {
         ConfigurationRepository configurationRepository = new ConfigurationRepositoryImpl();
         Output output = new CommandLineOutput();
         Input input = new CommandLineInput();

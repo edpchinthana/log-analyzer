@@ -1,6 +1,7 @@
 package output.commandline;
 
 import models.Email;
+import models.LogReport;
 import output.Output;
 
 import java.util.List;
@@ -28,5 +29,11 @@ public class CommandLineOutput implements Output {
     public void viewEmails(List<Email> emailList) {
         ViewEmails viewEmails = new ViewEmailsImpl();
         viewEmails.perform(emailList);
+    }
+
+    @Override
+    public void showSummary(LogReport logReport) {
+        ShowSummary showSummary = new ShowSummaryImpl();
+        showSummary.perform(logReport);
     }
 }

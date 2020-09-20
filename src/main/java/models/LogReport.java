@@ -1,7 +1,9 @@
 package models;
 
-import models.LogLine;
+import utils.TimestampConvertor;
+import utils.TimestampConvertorImpl;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +12,7 @@ public class LogReport {
     private int warnCount;
     private int infoCount;
     private List<LogLine> errorList;
+    private Timestamp lastTimestamp;
 
     public LogReport() {
         this.errorCount = 0;
@@ -23,14 +26,30 @@ public class LogReport {
             case ERROR:
                 this.errorCount++;
                 this.errorList.add(logLine);
+                this.lastTimestamp = logLine.getTimestamp();
                 break;
             case WARN:
                 this.warnCount++;
+                this.lastTimestamp = logLine.getTimestamp();
                 break;
             case INFO:
                 this.infoCount++;
+                this.lastTimestamp = logLine.getTimestamp();
                 break;
         }
+    }
+
+    public Timestamp getLastTimestamp() {
+        return lastTimestamp;
+    }
+
+    public void setLastTimestamp(Timestamp lastTimestamp) {
+        this.lastTimestamp = lastTimestamp;
+    }
+
+    public String getLastTimestampStr(){
+        TimestampConvertor convertor = new TimestampConvertorImpl();
+        return convertor.timestampToString(this.lastTimestamp);
     }
 
     public int getErrorCount() {

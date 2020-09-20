@@ -1,6 +1,7 @@
 package output;
 
 import models.Email;
+import models.LogReport;
 
 import java.util.List;
 
@@ -9,4 +10,5 @@ public interface Output {
     void showMenu();
     void showException(Exception exception);
     void viewEmails(List<Email> emailList);
+    void showSummary(LogReport logReport);
 }

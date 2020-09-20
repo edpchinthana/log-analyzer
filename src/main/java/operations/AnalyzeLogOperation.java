@@ -1,6 +1,7 @@
 package operations;
 
 import configurations.ConfigurationRepository;
+import configurations.impl.ConfigurationRepositoryImpl;
 import emailrepository.EmailRepository;
 import emailrepository.mysql.MysqlEmailRepository;
 import emailsender.EmailSender;
@@ -27,6 +28,7 @@ public class AnalyzeLogOperation implements  Operation {
         LogRepository logRepository = new LogFileReader();
         EmailRepository emailRepository = new MysqlEmailRepository();
         EmailSender emailSender = new GmailSMTP();
+        ConfigurationRepository configurationRepository = new ConfigurationRepositoryImpl();
 
         output.showMessage("---Analyze log file---");
         output.showMessage("Enter log file path : ");
@@ -34,8 +36,11 @@ public class AnalyzeLogOperation implements  Operation {
         String filePath = input.readString();
         LogReport logReport = logRepository.getLogReport(filePath, configurationModel.getLastTimestamp());
         List<Email> emailList = emailRepository.getEmails(configurationModel.getDatabaseConfiguration());
-
+        output.showSummary(logReport);
         emailSender.sendEmails(emailList,logReport,configurationModel.getEmailSenderConfiguration());
-
+        configurationModel.setLastTimestamp(logReport.getLastTimestampStr());
+        configurationRepository.exportConfiguration(configurationModel);
+        System.out.println("--bye--");
+        System.exit(0);
     }
 }
